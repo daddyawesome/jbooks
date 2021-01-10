@@ -1,0 +1,8 @@
+# Table of content
+# Learn more at https://jupyterbook.org/customize/toc.html
+#
+- file: introduction
+- file: great_red_spot
+  sections:
+    - file: markdown
+    - file: notebooks
