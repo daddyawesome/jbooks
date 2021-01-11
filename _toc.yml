@@ -3,6 +3,7 @@
 #
 - file: introduction
 - file: great_red_spot
+- file: content
   sections:
     - file: markdown
     - file: notebooks
