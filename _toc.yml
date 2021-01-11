@@ -1,6 +1,7 @@
 # Table of content
 # Learn more at https://jupyterbook.org/customize/toc.html
 #
+- file: APythonShinobi
 - file: introduction
 - file: great_red_spot
 - file: content
