@@ -3,8 +3,8 @@
 
 title: Python Shinobi
 author: Mark Russel Miranda
-logo: logo.png
-
+logo: pythonninja.png
+copyright : "2021"  # Copyright year to be placed in the footer
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
@@ -12,6 +12,7 @@ execute:
 
 # Define the name of the latex output file for PDF builds
 latex:
+  latex_engine : pdflatex  # one of 'pdflatex', 'xelatex' (recommended for unicode), 'luatex', 'platex', 'uplatex'
   latex_documents:
     targetname: book.tex
 
