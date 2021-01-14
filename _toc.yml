@@ -8,4 +8,8 @@
   sections:
     - file: markdown
     - file: notebooks
-- file: iammark
+- file: excel2python
+  sections:
+    - file: iammark
+    - file: automateexcel
+    - file: automateexcel3
