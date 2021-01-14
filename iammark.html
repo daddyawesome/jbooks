@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>I am MArk Down &#8212; Python Shinobi</title>
+    <title>A Step-by-Step Guide to Pandas Pivot Tables &#8212; Python Shinobi</title>
     
   <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -56,7 +56,8 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Content with notebooks" href="notebooks.html" />
+    <link rel="next" title="Automate Your (Boring!) Excel Reporting with Python!" href="automateexcel.html" />
+    <link rel="prev" title="Excel to Python" href="excel2python.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -123,10 +124,49 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   I am MArk Down
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="excel2python.html">
+   Excel to Python
   </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     A Step-by-Step Guide to Pandas Pivot Tables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="#column-non-null-count-dtype">
+     Column  Non-Null Count  Dtype
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="automateexcel.html">
+     Automate Your (Boring!) Excel Reporting with Python!
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="automateexcel.html#what-next">
+     What Next?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="automateexcel.html#conclusion">
+     Conclusion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="automateexcel3.html">
+     Automate These 3 (Boring!!) Excel Tasks with Python!
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="automateexcel3.html#applying-formulas-across-workbooks">
+     Applying Formulas across Workbooks
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
  </li>
 </ul>
 
@@ -214,34 +254,66 @@
         </div>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-is-myst">
-   What is MyST?
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-are-roles-and-directives">
-   What are roles and directives?
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   A Step-by-Step Guide to Pandas Pivot Tables
   </a>
   <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#using-a-directive">
-     Using a directive
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-to-build-a-pivot-table-in-python">
+     How to Build a Pivot Table in Python
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#using-a-role">
-     Using a role
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#creating-a-pivot-table-in-pandas">
+     Creating a Pivot Table in Pandas
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#adding-a-citation">
-     Adding a citation
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multi-index-dataframes-in-pandas">
+     Multi-Index Dataframes in Pandas
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#executing-code-in-your-markdown-files">
-     Executing code in your markdown files
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#filtering-python-pivot-tables">
+     Filtering Python Pivot Tables
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#creating-a-multi-index-pivot-table">
+     Creating a Multi-Index Pivot Table
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adding-columns-to-a-pandas-pivot-table">
+     Adding Columns to a Pandas Pivot Table
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#plotting-pandas-pivot-tables">
+     Plotting Pandas Pivot Tables
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#handling-missing-data-in-python-pivot-tables">
+     Handling Missing Data in Python Pivot Tables
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#column-non-null-count-dtype">
+   Column  Non-Null Count  Dtype
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adding-totals-for-rows-and-columns-to-pandas-pivot-tables">
+     Adding Totals for Rows and Columns to Pandas Pivot Tables
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conclusion-python-pivot-tables-the-ultimate-guide">
+     Conclusion: Python Pivot Tables — The Ultimate Guide
     </a>
    </li>
   </ul>
@@ -257,108 +329,229 @@
         
               <div>
                 
-  <div class="section" id="i-am-mark-down">
-<h1>I am MArk Down<a class="headerlink" href="#i-am-mark-down" title="Permalink to this headline">¶</a></h1>
-<p>This is just an example on what to do with my build wethere it is working or not</p>
-<p>Whether you write your book’s content in Jupyter Notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) or
-in regular markdown files (<code class="docutils literal notranslate"><span class="pre">.md</span></code>), you’ll write in the same flavor of markdown
-called <strong>MyST Markdown</strong>.</p>
-<div class="section" id="what-is-myst">
-<h2>What is MyST?<a class="headerlink" href="#what-is-myst" title="Permalink to this headline">¶</a></h2>
-<p>MyST stands for “Markedly Structured Text”. It
-is a slight variation on a flavor of markdown called “CommonMark” markdown,
-with small syntax extensions to allow you to write <strong>roles</strong> and <strong>directives</strong>
-in the Sphinx ecosystem.</p>
-</div>
-<div class="section" id="what-are-roles-and-directives">
-<h2>What are roles and directives?<a class="headerlink" href="#what-are-roles-and-directives" title="Permalink to this headline">¶</a></h2>
-<p>Roles and directives are two of the most powerful tools in Jupyter Book. They
-are kind of like functions, but written in a markup language. They both
-serve a similar purpose, but <strong>roles are written in one line</strong>, whereas
-<strong>directives span many lines</strong>. They both accept different kinds of inputs,
-and what they do with those inputs depends on the specific role or directive
-that is being called.</p>
-<div class="section" id="using-a-directive">
-<h3>Using a directive<a class="headerlink" href="#using-a-directive" title="Permalink to this headline">¶</a></h3>
-<p>At its simplest, you can insert a directive into your book’s content like so:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{mydirectivename}
-My directive content
-```
+  <div class="section" id="a-step-by-step-guide-to-pandas-pivot-tables">
+<h1>A Step-by-Step Guide to Pandas Pivot Tables<a class="headerlink" href="#a-step-by-step-guide-to-pandas-pivot-tables" title="Permalink to this headline">¶</a></h1>
+<p>You may be familiar with pivot tables in Excel to generate easy insights into your data. We will explore how to create Python pivot tables using the  <em><code class="docutils literal notranslate"><span class="pre">pivot</span> <span class="pre">table</span></code></em>  function available in Pandas. The function itself is quite easy to use, but it’s not the most intuitive. This post will give you a complete overview of how to use the function!</p>
+<p>The function is quite similar to the group by function also available in Pandas, but offers significantly more customization.</p>
+<div class="section" id="how-to-build-a-pivot-table-in-python">
+<h2>How to Build a Pivot Table in Python<a class="headerlink" href="#how-to-build-a-pivot-table-in-python" title="Permalink to this headline">¶</a></h2>
+<p>First off, let’s quickly cover off what a pivot table actually is: it’s a table of statistics that helps summarize the data of a larger table by “pivoting” that data. In Pandas, we can construct a pivot table using the following syntax, as described in the  <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.pivot_table.html">official Pandas documentation</a>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pandas.pivot_table(data, values=None, index=None, columns=None, aggfunc=&#39;mean&#39;, fill_value=None, margins=False, dropna=True, margins_name=&#39;All&#39;, observed=False)
 </pre></div>
 </div>
-<p>This will only work if a directive with name <code class="docutils literal notranslate"><span class="pre">mydirectivename</span></code> already exists
-(which it doesn’t). There are many pre-defined directives associated with
-Jupyter Book. For example, to insert a note box into your content, you can
-use the following directive:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{note}
-Here is a note
-```
+<p>The function returns its own dataframe that can be accessed similar to any other dataframe you may come across. Let’s take a moment to explore the different parameters available in the function:</p>
+<p>Now that we have an understanding of the different parameters available in the function, let’s load in our data set and begin exploring our data.</p>
+<p>Let’s start off by loading our data set! We’ve built a free downloadable data set that can be found at this link. We’ll use Pandas to import the data into a dataframe called  <strong><em>df</em></strong>. We’ll also print out the first five rows using the  <strong>.head()</strong> function:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>import pandas as pd 
+df = pd.read_excel(&#39;https://github.com/datagy/pivot_table_pandas/raw/master/sample_pivot.xlsx&#39;, parse_dates=[&#39;Date&#39;]) 
+print(df.head())
 </pre></div>
 </div>
-<p>This results in:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Here is a note</p>
+<p>Out:<br />
+Date       Region Type                 Units   Sales<br />
+0 2020-07-11 East   Children’s Clothing  18      306<br />
+1 2020-09-23 North  Children’s Clothing  14      448</p>
+<p>3 2020-02-28 East   Children’s Clothing  26      832<br />
+4 2020-03-19 West   Women’s Clothing     3       33</p>
+<p>Based on the output of the first five rows shown above, we can see that we have five columns to work with:</p>
+<p>Now that we have a bit more context around the data, let’s explore creating our first pivot table in Pandas.</p>
 </div>
-<p>In your built book.</p>
-<p>For more information on writing directives, see the
-<a class="reference external" href="https://myst-parser.readthedocs.io/">MyST documentation</a>.</p>
-</div>
-<div class="section" id="using-a-role">
-<h3>Using a role<a class="headerlink" href="#using-a-role" title="Permalink to this headline">¶</a></h3>
-<p>Roles are very similar to directives, but they are less-complex and written
-entirely on one line. You can insert a role into your book’s content with
-this pattern:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Some content {rolename}`and here is my role&#39;s content!`
+<div class="section" id="creating-a-pivot-table-in-pandas">
+<h2>Creating a Pivot Table in Pandas<a class="headerlink" href="#creating-a-pivot-table-in-pandas" title="Permalink to this headline">¶</a></h2>
+<p>To get started with creating a pivot table in Pandas, let’s build a very simple pivot table to start things off. We’ll begin by aggregating the Sales values by the Region the sale took place in:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>sales_by_region  =  pd.pivot_table(df, index  =  &#39;Region&#39;, values  =  &#39;Sales&#39;) print(sales_by_region)
 </pre></div>
 </div>
-<p>Again, roles will only work if <code class="docutils literal notranslate"><span class="pre">rolename</span></code> is a valid role’s name. For example,
-the <code class="docutils literal notranslate"><span class="pre">doc</span></code> role can be used to refer to another page in your book. You can
-refer directly to another page by its relative path. For example, the
-role syntax <code class="docutils literal notranslate"><span class="pre">{doc}`intro`</span></code> will result in: <span class="xref std std-doc">intro</span>.</p>
-<p>For more information on writing roles, see the
-<a class="reference external" href="https://myst-parser.readthedocs.io/">MyST documentation</a>.</p>
-</div>
-<div class="section" id="adding-a-citation">
-<h3>Adding a citation<a class="headerlink" href="#adding-a-citation" title="Permalink to this headline">¶</a></h3>
-<p>You can also cite references that are stored in a <code class="docutils literal notranslate"><span class="pre">bibtex</span></code> file. For example,
-the following syntax: <code class="docutils literal notranslate"><span class="pre">{cite}`holdgraf_evidence_2014`</span></code> will render like
-this: <span class="bibtex" id="id1">[holdgraf_evidence_2014]</span>.</p>
-<p>Moreoever, you can insert a bibliography into your page with this syntax:
-The <code class="docutils literal notranslate"><span class="pre">{bibliography}</span></code> directive must be used for all the <code class="docutils literal notranslate"><span class="pre">{cite}</span></code> roles to
-render properly.
-For example, if the references for your book are stored in <code class="docutils literal notranslate"><span class="pre">references.bib</span></code>,
-then the bibliography is inserted with:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{bibliography} references.bib
-```
+<p>This returns the following output:</p>
+<p>Sales   Region<br />
+East    408.182482<br />
+North   438.924051<br />
+South   432.956204<br />
+West    452.029412</p>
+<p>This gave us a summary of the  <strong>Sales</strong> field by  <strong>Region</strong>. Recall from our discussion around parameters earlier, that the default parameter for  <strong>aggfunc</strong>  is  <strong>mean</strong>. Because of this, the  <strong>Sales</strong>  field in the resulting dataframe is the average of  <strong>Sales</strong>  per  <strong>Region</strong>.</p>
+<p>If we wanted to change the type of function used, we could use the  <strong>aggfunc</strong>  parameter. For example, if we wanted to return the  <strong>sum</strong>  of all  <strong>Sales</strong>  across a  <strong>region</strong>, we could write:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>total_by_region  =  pd.pivot_table(df, index  =  &#39;Region&#39;, values  =  &#39;Sales&#39;, aggfunc=&#39;sum&#39;) print(total_by_region)
 </pre></div>
 </div>
-<p>Resulting in a rendered bibliography that looks like:</p>
-<p id="bibtex-bibliography-iammark-0"></p>
+<p>This returns:</p>
+<p>Sales    Region<br />
+East     167763<br />
+North    138700<br />
+South    59315<br />
+West     61476</p>
 </div>
-<div class="section" id="executing-code-in-your-markdown-files">
-<h3>Executing code in your markdown files<a class="headerlink" href="#executing-code-in-your-markdown-files" title="Permalink to this headline">¶</a></h3>
-<p>If you’d like to include computational content inside these markdown files,
-you can use MyST Markdown to define cells that will be executed when your
-book is built. Jupyter Book uses <em>jupytext</em> to do this.</p>
-<p>First, add Jupytext metadata to the file. For example, to add Jupytext metadata
-to this markdown page, run this command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">myst</span> <span class="n">init</span> <span class="n">markdown</span><span class="o">.</span><span class="n">md</span>
+<div class="section" id="multi-index-dataframes-in-pandas">
+<h2>Multi-Index Dataframes in Pandas<a class="headerlink" href="#multi-index-dataframes-in-pandas" title="Permalink to this headline">¶</a></h2>
+<p>We can already notice a difference between the dataframe that this function put out, compared to the original dataframe (<strong><em>df</em></strong>) we put together. This is because the resulting dataframe from a pivot table function is a MultiIndex dataframes. You can learn more about these dataframes  <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/advanced.html">at this link</a>.</p>
+<p>As this dataframe is a very simple dataframe, we can simply reset the index to turn it into a normal dataframe:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>sales_by_region.reset_index()
 </pre></div>
 </div>
-<p>Once a markdown file has Jupytext metadata in it, you can add the following
-directive to run the code at build time:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{code-cell}
-print(&quot;Here is some code to execute&quot;)
-```
+<p>Doing this resets the index and returns the following:</p>
+<p>Region   Sales<br />
+0 East     408.182482<br />
+1 North    438.924051<br />
+2 South    432.956204<br />
+3 West     452.029412</p>
+</div>
+<div class="section" id="filtering-python-pivot-tables">
+<h2>Filtering Python Pivot Tables<a class="headerlink" href="#filtering-python-pivot-tables" title="Permalink to this headline">¶</a></h2>
+<p>Let’s filter our data! Source: Nik Piepenbreier</p>
+<p>Now that we’ve created our first few pivot tables, let’s explore how to filter the data. Let’s create a dataframe that generates the  <strong>mean Sale</strong> price by  <strong>Region</strong>:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>avg_region_price = pd.pivot_table(df, index = &#39;Region&#39;, values = &#39;Sales&#39;)
 </pre></div>
 </div>
-<p>When your book is built, the contents of any <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.</p>
-<p>For more information about executing computational content with Jupyter Book,
-see <a class="reference external" href="https://myst-nb.readthedocs.io/">The MyST-NB documentation</a>.</p>
+<p>The values in this dataframe are:</p>
+<p>Sales    Region<br />
+East     408.182482<br />
+North    438.924051<br />
+South    432.956204<br />
+West     452.029412</p>
+<p>Now, say we wanted to filter the dataframe to only include  <strong>Regions</strong>  where the average sale price was over 450, we could write:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>avg_region_price[avg_region_price[&#39;Sales&#39;] &gt; 450]
+</pre></div>
 </div>
+<p>Sales 	Region<br />
+West 	452.029412</p>
+<p>We can also apply multiple conditions, such as filtering to show only  <strong>sales</strong>  greater than 450 or less than 430. I know this is a strange example, but it’s just illustrative:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>avg_region_price[(avg_region_price[&#39;Sales&#39;] &gt; 450) | (avg_region_price[&#39;Sales&#39;] &lt; 430)]
+</pre></div>
+</div>
+<p>Notice that we wrapped each condition in brackets and separated the conditions by a  <strong>pipe</strong>  ( | ) symbol. This returns the following:
+Sales 		Region<br />
+East 		408.182482<br />
+West 	452.029412</p>
+</div>
+<div class="section" id="creating-a-multi-index-pivot-table">
+<h2>Creating a Multi-Index Pivot Table<a class="headerlink" href="#creating-a-multi-index-pivot-table" title="Permalink to this headline">¶</a></h2>
+<p>Single index pivot tables are great for generating high-level overviews. However, we can also add additional indices to a pivot table to create further groupings. Say, we wanted to calculate the sum per Type and per Region, we could write the following:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>multi_index = pd.pivot_table(df, index = [&#39;Region&#39;, &#39;Type&#39;], values = &#39;Sales&#39;, aggfunc = &#39;sum&#39;) print(multi_index)
+</pre></div>
+</div>
+<p>This will give us the following:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>                            Sales   
+</pre></div>
+</div>
+<p>Region   	Type<br />
+East     	Children’s Clothing    45849<br />
+Men’s Clothing         51685<br />
+Women’s Clothing       70229<br />
+North    	Children’s Clothing    37306<br />
+Men’s Clothing         39975<br />
+Women’s Clothing       61419<br />
+South    	Children’s Clothing    18570<br />
+Men’s Clothing         18542<br />
+Women’s Clothing       22203<br />
+West     	Children’s Clothing    20182<br />
+Men’s Clothing         19077<br />
+Women’s Clothing       22217</p>
+<p>We could also apply multiple functions to our pivot table. Say we wanted to have the same pivot table that showed us the total sum but also the count of sales, we could write:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>multi_functions = pd.pivot_table(df, index = [&#39;Region&#39;, &#39;Type&#39;], values = &#39;Sales&#39;, aggfunc = [&#39;sum&#39;, len]) print(multi_functions)
+                              sum      len   
+                              Sales    Sales   
+</pre></div>
+</div>
+<p>Region     Type<br />
+East       Children’s Clothing    45849    113<br />
+Men’s Clothing         51685    122<br />
+Women’s Clothing       70229    176<br />
+North      Children’s Clothing    37306    85<br />
+Men’s Clothing         39975    89<br />
+Women’s Clothing       61419    142<br />
+South      Children’s Clothing    18570    45<br />
+Men’s Clothing         18542    39<br />
+Women’s Clothing       22203    53<br />
+West       Children’s Clothing    20182    42<br />
+Men’s Clothing         19077    41<br />
+Women’s Clothing       22217    53</p>
+</div>
+<div class="section" id="adding-columns-to-a-pandas-pivot-table">
+<h2>Adding Columns to a Pandas Pivot Table<a class="headerlink" href="#adding-columns-to-a-pandas-pivot-table" title="Permalink to this headline">¶</a></h2>
+<p>Adding columns to a pivot table in Pandas can add another dimension to the tables. Based on the description we provided in our earlier section, the Columns parameter allows us to add a key to aggregate by. For example, if we wanted to see the number of units sold by Type and by Region, we could write:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>columns_example = pd.pivot_table(df, index = &#39;Type&#39;, columns = &#39;Region&#39;, values = &#39;Units&#39;, aggfunc = &#39;sum&#39;) print(columns_example)
+</pre></div>
+</div>
+<p>Let’s visualize what this looks like:</p>
+<p>Region                East    North   South    West<br />
+Type<br />
+Children’s Clothing   2318.0  1763.0  1017.0   789.0<br />
+Men’s Clothing        2420.0  0.0     725.0    829.0<br />
+Women’s Clothing      3372.0  2596.0  1056.0   1006.0</p>
+<p>This allows us to see the data in a different, more easy-to-read format. It also makes plotting the data out a little easier, as we’ll explore in the next section.</p>
+<p>Columns might be one of the more confusing parts of the pivot table function, especially with how they relate to values. Columns are optional as we indicated above and provide the keys by which to separate the data. The pivot table aggregates the values in the values parameter.</p>
+</div>
+<div class="section" id="plotting-pandas-pivot-tables">
+<h2>Plotting Pandas Pivot Tables<a class="headerlink" href="#plotting-pandas-pivot-tables" title="Permalink to this headline">¶</a></h2>
+<p>While pivot tables make it easy to summarize data, plotting this data out makes it even easier to identify trends. Let’s, for example, create bar plots for the pivot table we generated with columns. We can do this by writing the following:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>columns_example.plot(kind=&#39;bar&#39;)
+</pre></div>
+</div>
+<p>This generates the following plot:
+<img alt="" src="https://miro.medium.com/max/381/1*nay5EBhS4ehc3VbFqpg3pg.png" />
+We can now visualize that the East region has the highest sales across Types, and that the South region has the lowest sales across Types.</p>
+<p>If you want to find ways to make Matplotlib charts a little less ugly, check out my other tutorial here:</p>
+</div>
+<div class="section" id="handling-missing-data-in-python-pivot-tables">
+<h2>Handling Missing Data in Python Pivot Tables<a class="headerlink" href="#handling-missing-data-in-python-pivot-tables" title="Permalink to this headline">¶</a></h2>
+<p>No data set is perfect! Let’s see how we can handle missing data in Python pivot tables. To see which columns have missing data, we can run the info() function to explore the data set:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>print(df.info())
+</pre></div>
+</div>
+<p>This returns the following output:</p>
+<p>&lt;class ‘pandas.core.frame.DataFrame’&gt;<br />
+RangeIndex: 1000 entries, 0 to 999<br />
+Data columns (total 5 columns):</p>
+</div>
+</div>
+<div class="section" id="column-non-null-count-dtype">
+<h1>Column  Non-Null Count  Dtype<a class="headerlink" href="#column-non-null-count-dtype" title="Permalink to this headline">¶</a></h1>
+<hr class="docutils" />
+<p>0   Date    1000 non-null   datetime64[ns]<br />
+1   Region  1000 non-null   object<br />
+2   Type    1000 non-null   object<br />
+3   Units   911 non-null    float64<br />
+4   Sales   1000 non-null   int64<br />
+dtypes: datetime64<span class="xref myst">ns</span>, float64(1), int64(1), object(2)<br />
+memory usage: 39.2+ KB</p>
+<p>We can see that Units is the only field with missing values. Let’s see what happens when we generate this following pivot table:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pd.pivot_table(df, index  =  &#39;Type&#39;, values  =  &#39;Units&#39;, columns  =  &#39;Region&#39;, aggfunc  =  &#39;max&#39;)
+</pre></div>
+</div>
+<p>This returns the following pivot table:</p>
+<p>Region 	                East 	North 	South 	West<br />
+Type 				<br />
+Children’s Clothing 	35.0 	35.0 	35.0 	34.0<br />
+Men’s Clothing 	        35.0 	NaN 	34.0 	35.0<br />
+Women’s Clothing 	35.0 	35.0 	35.0 	33.0</p>
+<p>The NaN displayed in the table, of course, doesn’t look great. We can choose to fill that value with something else. For example, if we wanted to fill N/A for any missing values, we could write the following:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pd.pivot_table(df, index = &#39;Type&#39;, values = &#39;Units&#39;, columns = &#39;Region&#39;, aggfunc = &#39;max&#39;, fill_value = &#39;N/A&#39;)
+</pre></div>
+</div>
+<p>The output of this is:</p>
+<p>Region 	                East 	North 	South 	West<br />
+Type 				<br />
+Children’s Clothing 	35.0 	35 	35.0 	34.0<br />
+Men’s Clothing 	        35.0 	N/A 	34.0 	35.0<br />
+Women’s Clothing 	35.0 	35 	35.0 	33.0</p>
+<p>Much better!</p>
+<div class="section" id="adding-totals-for-rows-and-columns-to-pandas-pivot-tables">
+<h2>Adding Totals for Rows and Columns to Pandas Pivot Tables<a class="headerlink" href="#adding-totals-for-rows-and-columns-to-pandas-pivot-tables" title="Permalink to this headline">¶</a></h2>
+<p>For our last section, let’s explore how to add totals to both rows and columns in our Python pivot table. We do this with the margins and margins_name parameters. If we wanted to add this to the pivot table we created above, we would write the following:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>pd.pivot_table(df, index = &#39;Type&#39;, values = &#39;Units&#39;, columns = &#39;Region&#39;, aggfunc = &#39;max&#39;, fill_value = &#39;N/A&#39;, margins = True, margins_name=&#39;Total&#39;)
+</pre></div>
+</div>
+<p>This returns the following:</p>
+<p>Region 	                East 	North 	South 	West 	Total<br />
+Type 					<br />
+Children’s Clothing 	35 	35 	35 	34 	35<br />
+Men’s Clothing 	        35 	N/A 	34 	35 	35<br />
+Women’s Clothing 	35 	35 	35 	33 	35<br />
+Total 	                35 	35 	35 	35 	35</p>
+<p>The margins parameter requires a boolean (True/False) value to either add row/column totals or not. The margins_name parameter allows us to add labels to these values.</p>
+</div>
+<div class="section" id="conclusion-python-pivot-tables-the-ultimate-guide">
+<h2>Conclusion: Python Pivot Tables — The Ultimate Guide<a class="headerlink" href="#conclusion-python-pivot-tables-the-ultimate-guide" title="Permalink to this headline">¶</a></h2>
+<p>In this post, we explored how to easily generated a pivot table off of a given dataframe using Python and Pandas. Pivot tables in Python allow you to easily generate insights into data sets, whether large or small. The multitude of parameters available in the pivot_table function allows for a lot of flexibility in how data is analyzed. In this post, we explored how to generate a pivot table, how to filter pivot tables in Python, how to add multiple indices and columns to pivot tables, how to plot pivot tables, how to deal with missing values, and how to add row and column totals</p>
 </div>
 </div>
 
@@ -390,7 +583,8 @@ see <a class="reference external" href="https://myst-nb.readthedocs.io/">The MyS
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="notebooks.html" title="previous page">Content with notebooks</a>
+    <a class='left-prev' id="prev-link" href="excel2python.html" title="previous page">Excel to Python</a>
+    <a class='right-next' id="next-link" href="automateexcel.html" title="next page">Automate Your (Boring!) Excel Reporting with Python!</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
