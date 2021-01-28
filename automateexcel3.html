@@ -114,11 +114,6 @@
      Automate These 3 (Boring!!) Excel Tasks with Python!
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="#applying-formulas-across-workbooks">
-     Applying Formulas across Workbooks
-    </a>
-   </li>
   </ul>
   <i class="fas fa-chevron-down">
   </i>
@@ -209,39 +204,30 @@
         </div>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Automate These 3 (Boring!!) Excel Tasks with Python!
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#no-more-opening-hundreds-of-excel-files">
+   No More Opening Hundreds of Excel Files
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#no-more-opening-hundreds-of-excel-files">
-     No More Opening Hundreds of Excel Files
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#combining-multiple-excel-files">
-     Combining Multiple Excel Files
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#getting-values-from-various-workbooks">
-     Getting Values from Various Workbooks
-    </a>
-   </li>
-  </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#combining-multiple-excel-files">
+   Combining Multiple Excel Files
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-values-from-various-workbooks">
+   Getting Values from Various Workbooks
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#applying-formulas-across-workbooks">
    Applying Formulas across Workbooks
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#conclusion-automating-excel-with-python">
-     Conclusion: Automating Excel with Python
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conclusion-automating-excel-with-python">
+   Conclusion: Automating Excel with Python
+  </a>
  </li>
 </ul>
 
@@ -258,14 +244,12 @@
 <h1>Automate These 3 (Boring!!) Excel Tasks with Python!<a class="headerlink" href="#automate-these-3-boring-excel-tasks-with-python" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="no-more-opening-hundreds-of-excel-files">
 <h2>No More Opening Hundreds of Excel Files<a class="headerlink" href="#no-more-opening-hundreds-of-excel-files" title="Permalink to this headline">¶</a></h2>
-<p><img alt="Cover image for the story" src="https://miro.medium.com/freeze/max/60/1*F7sRxt35c6GYEFhXJ6deew.gif?q=20" /></p>
 <p><img alt="Cover image for the story" src="https://miro.medium.com/max/1066/1*F7sRxt35c6GYEFhXJ6deew.gif" /></p>
 <p>Excel is everywhere. It’s basically the default application for data analysis in the workplace, for better or for worse. There are many boring tasks that you may need to take on in your day to day, that leave you thinking, “there must be a better way”. Python is that way!</p>
 <p>All of these examples are possible in VBA, but VBA can be tedious, and hey, we love Python!</p>
 </div>
 <div class="section" id="combining-multiple-excel-files">
 <h2>Combining Multiple Excel Files<a class="headerlink" href="#combining-multiple-excel-files" title="Permalink to this headline">¶</a></h2>
-<p><img alt="Image to combine multiple Excel files into one." src="https://miro.medium.com/freeze/max/60/1*CCSPWY3dnCg7wghzjqdCFA.gif?q=20" /></p>
 <p><img alt="Image to combine multiple Excel files into one." src="https://miro.medium.com/max/600/1*CCSPWY3dnCg7wghzjqdCFA.gif" /></p>
 <p>You might find yourself with a number of Excel workbooks (such as monthly sales reports). One day, you’re asked to calculate the total number of sales across all these reports. We can easily combine Excel workbooks with Python, using the Pandas library.</p>
 <p>You can install Pandas using either pip or conda:</p>
@@ -327,7 +311,6 @@
 </pre></div>
 </div>
 <p>Let’s break this down step-by-step:</p>
-<p><img alt="Image for post" src="https://miro.medium.com/freeze/max/60/1*w2nHEzioH2A03FgmHePgZA.gif?q=20" /></p>
 <p><img alt="Image for post" src="https://miro.medium.com/max/600/1*w2nHEzioH2A03FgmHePgZA.gif" /></p>
 <p>Copying a file’s path in Windows. Source: Nik Piepenbreier</p>
 <p>In  <strong>Section 1</strong>, we:</p>
@@ -344,10 +327,8 @@
 <li><p>Finally, we use the .value attribute to extract the cell’s value and append it to the  <em>values</em>  list.</p></li>
 </ul>
 </div>
-</div>
 <div class="section" id="applying-formulas-across-workbooks">
-<h1>Applying Formulas across Workbooks<a class="headerlink" href="#applying-formulas-across-workbooks" title="Permalink to this headline">¶</a></h1>
-<p><img alt="Image showing text Apply formulas across workbooks" src="https://miro.medium.com/freeze/max/60/1*KW3fnebs_N_3JO8m_y06eg.gif?q=20" /></p>
+<h2>Applying Formulas across Workbooks<a class="headerlink" href="#applying-formulas-across-workbooks" title="Permalink to this headline">¶</a></h2>
 <p><img alt="Image showing text Apply formulas across workbooks" src="https://miro.medium.com/max/800/1*KW3fnebs_N_3JO8m_y06eg.gif" /></p>
 <p>Let’s take a look at one final example! In each of the Excel workbooks, we have totals across the rows, but not a grand total for sales. Again, we could open each workbook and add in a formula, or we can use Python to do this for us!</p>
 <p>We’ll be making use of openpyxl again. If you need to install it, check out the instructions above. The links to download the files are also available above.</p>
@@ -363,6 +344,7 @@
 </div>
 <p>In this piece of code, we again fill a list to the files. The for-loop, opens each file and assigns “Sheet1” to a variable sheet.</p>
 <p>We then assign the string ‘=SUM(F5:F8)’ to cell F9 and use the .style attribute to assign the currency style directly to the cell. More cell styles can be found in the  <a class="reference external" href="https://openpyxl.readthedocs.io/en/stable/styles.html">official documentation</a>.</p>
+</div>
 <div class="section" id="conclusion-automating-excel-with-python">
 <h2>Conclusion: Automating Excel with Python<a class="headerlink" href="#conclusion-automating-excel-with-python" title="Permalink to this headline">¶</a></h2>
 <p>Python makes working with Excel files quite easy! In this article, we learned how to combine various Excel files, get specific values, and add formulas across workbooks.</p>

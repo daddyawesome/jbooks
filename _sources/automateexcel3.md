@@ -2,10 +2,6 @@
 
 ### No More Opening Hundreds of Excel Files
 
-
-
-![Cover image for the story](https://miro.medium.com/freeze/max/60/1*F7sRxt35c6GYEFhXJ6deew.gif?q=20)
-
 ![Cover image for the story](https://miro.medium.com/max/1066/1*F7sRxt35c6GYEFhXJ6deew.gif)
 
 
@@ -14,8 +10,6 @@ Excel is everywhere. It’s basically the default application for data analysis 
 All of these examples are possible in VBA, but VBA can be tedious, and hey, we love Python!
 
 ## Combining Multiple Excel Files
-
-![Image to combine multiple Excel files into one.](https://miro.medium.com/freeze/max/60/1*CCSPWY3dnCg7wghzjqdCFA.gif?q=20)
 
 ![Image to combine multiple Excel files into one.](https://miro.medium.com/max/600/1*CCSPWY3dnCg7wghzjqdCFA.gif)
 
@@ -87,7 +81,6 @@ values.append(value)
 
 Let’s break this down step-by-step:
 
-![Image for post](https://miro.medium.com/freeze/max/60/1*w2nHEzioH2A03FgmHePgZA.gif?q=20)
 
 ![Image for post](https://miro.medium.com/max/600/1*w2nHEzioH2A03FgmHePgZA.gif)
 
@@ -106,9 +99,7 @@ In  **Step**  2, we
 -   We use [‘Sheet1’] and [‘F5’] to reference both sheet names and cell references in workbook and worksheet objects.
 -   Finally, we use the .value attribute to extract the cell’s value and append it to the  _values_  list.
 
-# Applying Formulas across Workbooks
-
-![Image showing text Apply formulas across workbooks](https://miro.medium.com/freeze/max/60/1*KW3fnebs_N_3JO8m_y06eg.gif?q=20)
+## Applying Formulas across Workbooks
 
 ![Image showing text Apply formulas across workbooks](https://miro.medium.com/max/800/1*KW3fnebs_N_3JO8m_y06eg.gif)
 
