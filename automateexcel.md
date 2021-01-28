@@ -3,9 +3,6 @@
 
 ### Create Excel Reports (Including Charts!) Without Ever Touching Excel!
 
-
-![Cover Image for Automate Your (Boring!) Excel Reporting with Python!](https://miro.medium.com/max/60/1*GcwFzbzOUveVgNe8i47CRw.png?q=20)
-
 ![Cover Image for Automate Your (Boring!) Excel Reporting with Python!](https://miro.medium.com/max/1920/1*GcwFzbzOUveVgNe8i47CRw.png)
 
 
@@ -29,7 +26,7 @@ Let’s take a quick look at what we’ll be automating! We’re going to be usi
 
 The data format matches what you might expect to get from a corporate database with client sales on it.
 
-We’re going to be breaking that data out by region and creating two summary tables, with formatting and with charts. All without ever touching Excel![Image showing a data table going into Python and then going into four workbooks.](https://miro.medium.com/max/60/1*wqKTDWHtTl7dwFpfdFUDFw.png?q=20)
+We’re going to be breaking that data out by region and creating two summary tables, with formatting and with charts. All without ever touching Excel!
 
 ![Image showing a data table going into Python and then going into four workbooks.](https://miro.medium.com/max/1920/1*wqKTDWHtTl7dwFpfdFUDFw.png)
 
@@ -155,8 +152,6 @@ In  **Section 7**, we add our bar chart:
 
 This is what our sheet looks like now:
 
-![A picture of what the final workbooks look like.](https://miro.medium.com/max/60/1*qcXc1f6MgwrFlNi7sbFpVQ.png?q=20)
-
 ![A picture of what the final workbooks look like.](https://miro.medium.com/max/1920/1*qcXc1f6MgwrFlNi7sbFpVQ.png)
 
 ## Automating this Workflow for Multiple Workbooks
@@ -204,13 +199,13 @@ In  **Section 9**, we repeat our earlier code in a for-loop:
 -   We create a new variable that holds the path to the folder we want to save our files in.
 -   Later, we use f-strings to insert the region names into our script to make it dynamic to each region.
 
-# What Next?
+## What Next?
 
 The nice thing about Python is how scaleable it makes repetitive tasks.
 
 Imagine getting this file daily and having to create these workbooks every day. You’ve just saved yourself a good chunk of time every day!
 
-# Conclusion
+## Conclusion
 
 We learned quite a bit in this short tutorial! We transformed a workbook into a set of pivot tables, exported those into separate workbooks, and applied formatting and graphs to each workbook!
 
