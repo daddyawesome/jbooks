@@ -178,7 +178,7 @@ This returns the following output:
 <class 'pandas.core.frame.DataFrame'>  
 RangeIndex: 1000 entries, 0 to 999  
 Data columns (total 5 columns):  
- #   Column  Non-Null Count  Dtype           
+    Column  Non-Null Count  Dtype           
 ---  ------  --------------  -----           
  0   Date    1000 non-null   datetime64[ns]  
  1   Region  1000 non-null   object          
