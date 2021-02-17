@@ -75,7 +75,7 @@ We can see that the page loads perfectly:
 
 ![Index Page](https://dev-to-uploads.s3.amazonaws.com/i/p9ku8punx9w9mv9z0gh2.png)
 
-# The djangify way
+### The djangify way
 
 To ease up the above process, there exists a python package  [djangify](https://pypi.org/project/djangify/)  which can be installed by:
 

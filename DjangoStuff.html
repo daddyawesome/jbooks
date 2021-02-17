@@ -126,11 +126,6 @@
    Django
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#the-djangify-way">
-   The djangify way
-  </a>
- </li>
 </ul>
 
 </nav> <!-- To handle the deprecated key -->
@@ -217,54 +212,47 @@
         </div>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Django
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#converting-any-html-template-into-a-django-template">
+   Converting any HTML template into a Django template
   </a>
   <ul class="nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#converting-any-html-template-into-a-django-template">
-     Converting any HTML template into a Django template
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-1">
+     Step 1
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#step-1">
-       Step 1
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#step-2">
-       Step 2
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#step-3">
-       Step 3
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#step-4">
-       Step 4
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#step-5">
-       Step 5
-      </a>
-     </li>
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#step-6">
-       Step 6
-      </a>
-     </li>
-    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-2">
+     Step 2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-3">
+     Step 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-4">
+     Step 4
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-5">
+     Step 5
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-6">
+     Step 6
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-djangify-way">
+     The djangify way
+    </a>
    </li>
   </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-djangify-way">
-   The djangify way
-  </a>
  </li>
 </ul>
 
@@ -345,16 +333,16 @@
 <p>We can see that the page loads perfectly:</p>
 <p><img alt="Index Page" src="https://dev-to-uploads.s3.amazonaws.com/i/p9ku8punx9w9mv9z0gh2.png" /></p>
 </div>
-</div>
-</div>
 <div class="section" id="the-djangify-way">
-<h1>The djangify way<a class="headerlink" href="#the-djangify-way" title="Permalink to this headline">¶</a></h1>
+<h3>The djangify way<a class="headerlink" href="#the-djangify-way" title="Permalink to this headline">¶</a></h3>
 <p>To ease up the above process, there exists a python package  <a class="reference external" href="https://pypi.org/project/djangify/">djangify</a>  which can be installed by:</p>
 <p>pip install djangify</p>
 <p>The 1-3 and 5-6 steps remain the same but the package automatically does the step 4 for you, after installing the package just run the following command from your shell inside the MyProject directory:</p>
 <p>djangify -d main/templates/main</p>
 <p>and the tool will create a folder “Modified_files” in which there will be HTML with every CSS, JS reference converted to the Django compatible reference, replacing the index.html in the main/templates/main/ with the same-named file in main/templates/main/Modified_files/ we can easily see the same output as above.</p>
 <p>The Modified_files will also contain the other HTML files converted into the desired format and thus can be directly used with <a class="reference external" href="http://views.py">views.py</a></p>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
