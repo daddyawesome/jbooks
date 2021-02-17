@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Numeric data types &#8212; Python Shinobi</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/pythonninja.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Python Shinobi</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../APythonShinobi.html">
+   Introduction to Being a Python Shinobi
+  </a>
+ </li>
+</ul>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Assignment_1.html">
+   Exercises
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../excel2python.html">
+   Excel to Python
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../iammark.html">
+     A Step-by-Step Guide to Pandas Pivot Tables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../automateexcel.html">
+     Automate Your (Boring!) Excel Reporting with Python!
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../automateexcel3.html">
+     Automate These 3 (Boring!!) Excel Tasks with Python!
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../DjangoStuff.html">
+   Django
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/ninja/numericDataTypes.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/daddyawesome/jbooks"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/daddyawesome/jbooks/issues/new?title=Issue%20on%20page%20%2Fninja/numericDataTypes.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/daddyawesome/jbooks/master?urlpath=tree/docs/ninja/numericDataTypes.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#int">
+   int
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#float">
+   float
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#arithmetic-operators">
+   Arithmetic operators
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#operator-precedence">
+   Operator precedence
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#integer-formats">
+   Integer formats
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#other-numeric-types">
+   Other numeric types
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><a href="https://colab.research.google.com/github/daddyawesome/jbooks/blob/master/ninja/numericDataTypes.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
+<div class="section" id="numeric-data-types">
+<h1>Numeric data types<a class="headerlink" href="#numeric-data-types" title="Permalink to this headline">¶</a></h1>
+<p>Python is a dynamically typed language. The interpreter infers the data type of a value based on pre-determined rules. In the previous chapter, <strong>string</strong> values were coded using single quotes around a sequence of characters. Similarly, there are rules by which you can declare different numeric data types.</p>
+<div class="section" id="int">
+<h2>int<a class="headerlink" href="#int" title="Permalink to this headline">¶</a></h2>
+<p>Integer numbers are made up of digits <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">9</span></code> and can be prefixed with <strong>unary</strong> operators like <code class="docutils literal notranslate"><span class="pre">+</span></code> or <code class="docutils literal notranslate"><span class="pre">-</span></code>. There is no restriction to the size of numbers that can be used, only limited by the memory available on your system. Here’s some examples:</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="mi">42</span>
+<span class="mi">42</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">0</span>
+<span class="mi">0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="o">+</span><span class="mi">100</span>
+<span class="mi">100</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="o">-</span><span class="mi">5</span>
+<span class="o">-</span><span class="mi">5</span>
+</pre></div>
+</div>
+<p>For readability purposes, you can use underscores in between the digits.</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="mi">1_000_000_000</span>
+<span class="mi">1000000000</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p><img alt="warning" src="ninja/images/warning.svg" /> Underscore cannot be used as the first or last character, and cannot be used consecutively.</p>
+</div></blockquote>
+</div>
+<div class="section" id="float">
+<h2>float<a class="headerlink" href="#float" title="Permalink to this headline">¶</a></h2>
+<p>Here’s some examples for floating-point numbers.</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span><span class="o">.</span><span class="mi">14</span>
+<span class="mi">3</span><span class="o">.</span><span class="mi">14</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="o">.</span><span class="mi">12</span>
+<span class="o">-</span><span class="mi">1</span><span class="o">.</span><span class="mi">12</span>
+</pre></div>
+</div>
+<p>Python also supports the exponential notation. See <a class="reference external" href="https://en.wikipedia.org/wiki/Scientific_notation#E_notation">wikipedia: E scientific notation</a> for details about this form of expressing numbers.</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="mi">543</span><span class="o">.</span><span class="mi">15</span><span class="n">e20</span>
+<span class="mi">5</span><span class="o">.</span><span class="mi">4315</span><span class="n">e</span><span class="o">+</span><span class="mi">22</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">1</span><span class="o">.</span><span class="mi">5</span><span class="n">e</span><span class="o">-</span><span class="mi">5</span>
+<span class="mi">1</span><span class="o">.</span><span class="mi">5</span><span class="n">e</span><span class="o">-</span><span class="mo">05</span>
+</pre></div>
+</div>
+<p>Unlike integers, floating-point numbers have a limited precision. While displaying very small or very large floating-point numbers, Python will automatically convert them to the exponential notation.</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="mi">0</span><span class="o">.</span><span class="mo">0000000001234567</span><span class="mi">890123456789</span>
+<span class="mi">1</span><span class="o">.</span><span class="mi">2345678901234568</span><span class="n">e</span><span class="o">-</span><span class="mi">10</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">31415926535897935809629384623048923</span><span class="o">.</span><span class="mi">649234324234</span>
+<span class="mi">3</span><span class="o">.</span><span class="mi">1415926535897936</span><span class="n">e</span><span class="o">+</span><span class="mi">34</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p><img alt="info" src="ninja/images/info.svg" /> You might also get seemingly strange results as shown below. See <a class="reference external" href="https://docs.python.org/3/tutorial/floatingpoint.html">docs.python: Floating Point Arithmetic Issues and Limitations</a> and <a class="reference external" href="https://stackoverflow.com/q/588004/4082052">stackoverflow: Is floating point math broken?</a> for details and workarounds.</p>
+</div></blockquote>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="mi">3</span><span class="o">.</span><span class="mi">14</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="mi">5</span><span class="o">.</span><span class="mi">140000000000001</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="arithmetic-operators">
+<h2>Arithmetic operators<a class="headerlink" href="#arithmetic-operators" title="Permalink to this headline">¶</a></h2>
+<p>All arithmetic operators you’d typically expect are available. If any operand is a floating-point number, result will be of <code class="docutils literal notranslate"><span class="pre">float</span></code> data type. Use <code class="docutils literal notranslate"><span class="pre">+</span></code> for addition, <code class="docutils literal notranslate"><span class="pre">-</span></code> for subtraction, <code class="docutils literal notranslate"><span class="pre">*</span></code> for multiplication and <code class="docutils literal notranslate"><span class="pre">**</span></code> for exponentiation. As mentioned before, REPL is quite useful for learning purposes. It makes for a good calculator for number crunching as well. You can also use <code class="docutils literal notranslate"><span class="pre">_</span></code> to refer to the result of the previous expression (this is applicable only in the REPL, not in Python scripts).</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="mi">25</span> <span class="o">+</span> <span class="mi">17</span>
+<span class="mi">42</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">10</span> <span class="o">-</span> <span class="mi">8</span>
+<span class="mi">2</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">25</span> <span class="o">*</span> <span class="mi">3</span><span class="o">.</span><span class="mi">3</span>
+<span class="mi">82</span><span class="o">.</span><span class="mi">5</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">32</span> <span class="o">**</span> <span class="mi">42</span>
+<span class="mi">1645504557321206042154969182557350504982735865633579863348609024</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="mi">7</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">_</span> <span class="o">*</span> <span class="mi">3</span>
+<span class="mi">21</span>
+</pre></div>
+</div>
+<p>There are two operators for division. Use <code class="docutils literal notranslate"><span class="pre">/</span></code> if you want a floating-point result. Using <code class="docutils literal notranslate"><span class="pre">//</span></code> between two integers will give only the integer portion of the result (no rounding).</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="mi">4</span><span class="o">.</span><span class="mi">5</span> <span class="o">/</span> <span class="mi">1</span><span class="o">.</span><span class="mi">5</span>
+<span class="mi">3</span><span class="o">.</span><span class="mi">0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">/</span> <span class="mi">3</span>
+<span class="mi">1</span><span class="o">.</span><span class="mi">6666666666666667</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">//</span> <span class="mi">3</span>
+<span class="mi">1</span>
+</pre></div>
+</div>
+<p>Use modulo operator <code class="docutils literal notranslate"><span class="pre">%</span></code> to get the remainder. Sign of the result is same as the sign of the second operand.</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">%</span> <span class="mi">3</span>
+<span class="mi">2</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="o">-</span><span class="mi">5</span> <span class="o">%</span> <span class="mi">3</span>
+<span class="mi">1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">%</span> <span class="o">-</span><span class="mi">3</span>
+<span class="o">-</span><span class="mi">1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">6</span><span class="o">.</span><span class="mi">5</span> <span class="o">%</span> <span class="o">-</span><span class="mi">3</span>
+<span class="o">-</span><span class="mi">2</span><span class="o">.</span><span class="mi">5</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p><img alt="info" src="ninja/images/info.svg" /> See <a class="reference external" href="https://docs.python.org/3/reference/expressions.html#binary-arithmetic-operations">docs.python: Binary arithmetic operations</a> and <a class="reference external" href="https://stackoverflow.com/q/3883004/4082052">stackoverflow: modulo operation on negative numbers</a> for more details.</p>
+</div></blockquote>
+</div>
+<div class="section" id="operator-precedence">
+<h2>Operator precedence<a class="headerlink" href="#operator-precedence" title="Permalink to this headline">¶</a></h2>
+<p>Arithmetic operator precedence follows the familiar <strong>PEMDAS</strong> or <strong>BODMAS</strong> abbreviations. Precedence, higher to lower is listed below:</p>
+<ul class="simple">
+<li><p>Expression inside parentheses</p></li>
+<li><p>exponentiation</p></li>
+<li><p>multiplication, division, modulo</p></li>
+<li><p>addition, subtraction</p></li>
+</ul>
+<p>Expression is evaluated left-to-right when operators have the same precedence. Unary operator precedence is between exponentiation and multiplication/division operators. See <a class="reference external" href="https://docs.python.org/3/reference/expressions.html#operator-precedence">docs.python: Operator precedence</a> for complete details.</p>
+</div>
+<div class="section" id="integer-formats">
+<h2>Integer formats<a class="headerlink" href="#integer-formats" title="Permalink to this headline">¶</a></h2>
+<p>The integer examples so far have been coded using base 10, i.e. <strong>decimal</strong> format. Python has provision for representing <strong>binary</strong>, <strong>octal</strong> and <strong>hexadecimal</strong> formats as well. To distinguish between these different formats, a prefix is used:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">0b</span></code> or <code class="docutils literal notranslate"><span class="pre">0B</span></code> for binary</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">0o</span></code> or <code class="docutils literal notranslate"><span class="pre">0O</span></code> for octal</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">0x</span></code> or <code class="docutils literal notranslate"><span class="pre">0X</span></code> for hexadecimal</p></li>
+</ul>
+<p>All four formats fall under the <code class="docutils literal notranslate"><span class="pre">int</span></code> data type. Python displays them in decimal format by default. Underscores can be used for readability for any of these formats.</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="mb">0b1000_1111</span>
+<span class="mi">143</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">0</span><span class="n">o10</span>
+<span class="mi">8</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mh">0x10</span>
+<span class="mi">16</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">5</span> <span class="o">+</span> <span class="mh">0xa</span>
+<span class="mi">15</span>
+</pre></div>
+</div>
+<p>Decimal format numbers cannot be prefixed by <code class="docutils literal notranslate"><span class="pre">0</span></code>, other than <code class="docutils literal notranslate"><span class="pre">0</span></code> itself.</p>
+<div class="highlight-ruby notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="mo">00000</span>
+<span class="mi">0</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="mi">09</span>
+  <span class="no">File</span> <span class="s2">&quot;&lt;stdin&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span>
+    <span class="mi">09</span>
+     <span class="o">^</span>
+<span class="ss">SyntaxError</span><span class="p">:</span> <span class="n">leading</span> <span class="n">zeros</span> <span class="k">in</span> <span class="n">decimal</span> <span class="n">integer</span> <span class="n">literals</span> <span class="n">are</span> <span class="ow">not</span> <span class="n">permitted</span><span class="p">;</span>
+             <span class="n">use</span> <span class="n">an</span> <span class="mi">0</span><span class="n">o</span> <span class="n">prefix</span> <span class="k">for</span> <span class="n">octal</span> <span class="n">integers</span>
+</pre></div>
+</div>
+<p>If code execution hits a snag, you’ll get an error message along with the code snippet that the interpreter thinks caused the issue. In Python parlance, an <strong>exception</strong> has occurred. The exception has a name (<code class="docutils literal notranslate"><span class="pre">SyntaxError</span></code> in the above example) followed by the error message. See <a class="reference external" href="#exception-handling">Exception handling</a> chapter for more details.</p>
+</div>
+<div class="section" id="other-numeric-types">
+<h2>Other numeric types<a class="headerlink" href="#other-numeric-types" title="Permalink to this headline">¶</a></h2>
+<p>Python’s standard data type also includes complex type (imaginary part is suffixed with the character <code class="docutils literal notranslate"><span class="pre">j</span></code>). Others like <code class="docutils literal notranslate"><span class="pre">decimal</span></code> and <code class="docutils literal notranslate"><span class="pre">fractions</span></code> are provided as modules.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#typesnumeric">docs.python: complex</a></p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/decimal.html">docs.python: decimal</a></p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/fractions.html">docs.python: fractions</a></p></li>
+</ul>
+<blockquote>
+<div><p><img alt="warning" src="ninja/images/warning.svg" /> Some of the numeric types can have alphabets like <code class="docutils literal notranslate"><span class="pre">e</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code>, <code class="docutils literal notranslate"><span class="pre">j</span></code>, etc in their values. As Python is a dynamically typed language, you cannot use variable names beginning with a number. Otherwise, it would be impossible to evaluate an expression like <code class="docutils literal notranslate"><span class="pre">result</span> <span class="pre">=</span> <span class="pre">input_value</span> <span class="pre">+</span> <span class="pre">0x12</span> <span class="pre">-</span> <span class="pre">2j</span></code>.</p>
+</div></blockquote>
+<blockquote>
+<div><p><img alt="info" src="ninja/images/info.svg" /> There are many third-party libraries that are useful for number crunching in mathematical context, engineering applications, etc. See my list <a class="reference external" href="https://learnbyexample.github.io/py_resources/domain.html#scientific-computing">py_resources: Scientific computing</a> for curated resources.</p>
+</div></blockquote>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./ninja"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Mark Russel Miranda<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
