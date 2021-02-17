@@ -3,6 +3,7 @@
 #
 - file: APythonShinobi
   sections:
+    - file: ninja/numericDataTypes
     - file: Assignment_1
 #- file: great_red_spot
 #- file: content
