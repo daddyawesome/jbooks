@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Django &#8212; Python Shinobi</title>
+    
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/pythonninja.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Python Shinobi</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="APythonShinobi.html">
+   Introduction to Being a Python Shinobi
+  </a>
+ </li>
+</ul>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Assignment_1.html">
+   Exercises
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="excel2python.html">
+   Excel to Python
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="iammark.html">
+     A Step-by-Step Guide to Pandas Pivot Tables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="automateexcel.html">
+     Automate Your (Boring!) Excel Reporting with Python!
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="automateexcel3.html">
+     Automate These 3 (Boring!!) Excel Tasks with Python!
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/DjangoStuff.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/daddyawesome/jbooks"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/daddyawesome/jbooks/issues/new?title=Issue%20on%20page%20%2FDjangoStuff.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Django
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#converting-any-html-template-into-a-django-template">
+     Converting any HTML template into a Django template
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#step-1">
+       Step 1
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#step-2">
+       Step 2
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#step-3">
+       Step 3
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#step-4">
+       Step 4
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#step-5">
+       Step 5
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#step-6">
+       Step 6
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-djangify-way">
+   The djangify way
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="django">
+<h1>Django<a class="headerlink" href="#django" title="Permalink to this headline">¶</a></h1>
+<p>This part is for Django stuff it will be change later.</p>
+<div class="section" id="converting-any-html-template-into-a-django-template">
+<h2>Converting any HTML template into a Django template<a class="headerlink" href="#converting-any-html-template-into-a-django-template" title="Permalink to this headline">¶</a></h2>
+<p>Any HTML, CSS, JS, or BootStrap template can be converted into a Django compatible template. The trick usually is to add  <code class="docutils literal notranslate"><span class="pre">{%</span> <span class="pre">static</span> <span class="pre">%}</span></code>  tags for the js, CSS, and image files that we want to include in the HTML files. That can become a very lengthy task to do for a complete page.</p>
+<p>Let us say that we download a template :</p>
+<p><img alt="Downloading Template" src="https://dev-to-uploads.s3.amazonaws.com/i/sp84q62llutbd41c7tvp.png" /></p>
+<p>Template:  <a class="reference external" href="https://colorlib.com/wp/template/appco/">Appco</a></p>
+<p>Let us create a new Django project and try to load the template into it, following are the steps that we would need to take:</p>
+<div class="section" id="step-1">
+<h3>Step 1<a class="headerlink" href="#step-1" title="Permalink to this headline">¶</a></h3>
+<p>Create a new django project by:  <code class="docutils literal notranslate"><span class="pre">django-admin</span> <span class="pre">startproject</span> <span class="pre">MyProject</span></code></p>
+</div>
+<div class="section" id="step-2">
+<h3>Step 2<a class="headerlink" href="#step-2" title="Permalink to this headline">¶</a></h3>
+<p>cd into the project  <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">MyProject/</span></code>  and start an app main:  <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">manage.py</span> <span class="pre">startapp</span> <span class="pre">main</span></code></p>
+</div>
+<div class="section" id="step-3">
+<h3>Step 3<a class="headerlink" href="#step-3" title="Permalink to this headline">¶</a></h3>
+<p>Create a new folder called template inside the MyProject and a new folder main inside this templates folder. Now we need to create a folder static/ inside the MyProject/main folder and copy all the static files associated with the project there which in this case reside under the assets folder. So let us directly move the assets folder to the MyProject/main/static/ directory. The file structure will now look something like this:  <img alt="File Structure" src="https://dev-to-uploads.s3.amazonaws.com/i/jhudcioi1d0e5p25g45x.png" /></p>
+</div>
+<div class="section" id="step-4">
+<h3>Step 4<a class="headerlink" href="#step-4" title="Permalink to this headline">¶</a></h3>
+<p>Now for the most tiresome step, we need to change every link to the CSS / js files in the HTML pages we need to render in the views. Example:  <code class="docutils literal notranslate"><span class="pre">&lt;&quot;link</span> <span class="pre">rel=&quot;stylesheet&quot;</span> <span class="pre">href=&quot;assets/css/bootstrap.min.css&quot;&gt;</span></code>  needs to be changed to  <code class="docutils literal notranslate"><span class="pre">&lt;link</span> <span class="pre">rel=&quot;stylesheet&quot;</span> <span class="pre">href=&quot;{%</span> <span class="pre">static</span> <span class="pre">'assets/css/bootstrap.min.css'</span> <span class="pre">%}&quot;&gt;&lt;/code&gt;</span></code></p>
+</div>
+<div class="section" id="step-5">
+<h3>Step 5<a class="headerlink" href="#step-5" title="Permalink to this headline">¶</a></h3>
+<p>We need to include the line  <code class="docutils literal notranslate"><span class="pre">{%</span> <span class="pre">load</span> <span class="pre">static</span> <span class="pre">%}</span></code>  at the top of the HTML page in order to be able to use the static tag.</p>
+<p>We need to include the app in the  <code class="docutils literal notranslate"><span class="pre">settings.py</span></code>  file by adding  <code class="docutils literal notranslate"><span class="pre">'main.apps.MainConfig'</span></code>  in the INSTALLED_APPS list and add a view for creating rendering the index page so modify the MyProject/main/views.py file and add the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">django.shortcuts</span> <span class="kn">import</span> <span class="n">render</span>
+
+<span class="k">def</span> <span class="nf">index</span> <span class="p">(</span><span class="n">request</span><span class="p">):</span> 
+    <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="s1">&#39;main/index.html&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>and also add a URL route for the same, create a file <a class="reference external" href="http://urls.py">urls.py</a> in MyProject/main/ and add the following code :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">.</span> <span class="kn">import</span> <span class="n">views</span>
+<span class="kn">from</span> <span class="nn">django.urls</span> <span class="kn">import</span> <span class="n">path</span>
+
+<span class="n">app_name</span> <span class="o">=</span> <span class="s1">&#39;main&#39;</span>
+
+<span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">views</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;index&#39;</span><span class="p">),</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>now finally we need to add the following in the MyProject/MyProject/urls.py :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">django.contrib</span> <span class="kn">import</span> <span class="n">admin</span>
+<span class="kn">from</span> <span class="nn">django.urls</span> <span class="kn">import</span> <span class="n">path</span><span class="p">,</span> <span class="n">include</span>
+
+<span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;admin/&#39;</span><span class="p">,</span> <span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">urls</span><span class="p">),</span>
+    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s1">&#39;main.urls&#39;</span><span class="p">,</span> <span class="n">namespace</span><span class="o">=</span><span class="s1">&#39;main&#39;</span><span class="p">)),</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="step-6">
+<h3>Step 6<a class="headerlink" href="#step-6" title="Permalink to this headline">¶</a></h3>
+<p>Migrating the changes and running server :</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">migrate</span>
+<span class="n">python</span> <span class="n">manage</span><span class="o">.</span><span class="n">py</span> <span class="n">runserver</span>
+</pre></div>
+</div>
+<p>We can see that the page loads perfectly:</p>
+<p><img alt="Index Page" src="https://dev-to-uploads.s3.amazonaws.com/i/p9ku8punx9w9mv9z0gh2.png" /></p>
+</div>
+</div>
+</div>
+<div class="section" id="the-djangify-way">
+<h1>The djangify way<a class="headerlink" href="#the-djangify-way" title="Permalink to this headline">¶</a></h1>
+<p>To ease up the above process, there exists a python package  <a class="reference external" href="https://pypi.org/project/djangify/">djangify</a>  which can be installed by:</p>
+<p>pip install djangify</p>
+<p>The 1-3 and 5-6 steps remain the same but the package automatically does the step 4 for you, after installing the package just run the following command from your shell inside the MyProject directory:</p>
+<p>djangify -d main/templates/main</p>
+<p>and the tool will create a folder “Modified_files” in which there will be HTML with every CSS, JS reference converted to the Django compatible reference, replacing the index.html in the main/templates/main/ with the same-named file in main/templates/main/Modified_files/ we can easily see the same output as above.</p>
+<p>The Modified_files will also contain the other HTML files converted into the desired format and thus can be directly used with <a class="reference external" href="http://views.py">views.py</a></p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Mark Russel Miranda<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
