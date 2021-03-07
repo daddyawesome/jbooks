@@ -12,4 +12,6 @@ I will also try to teach this subject in cebuano, It is my wish for cebuano's wo
 
 [KhylanAmnelle](https://github.com/khylanAmnelle) is my Daughter
 
+Making a dashboard out of django or flask
+
 
