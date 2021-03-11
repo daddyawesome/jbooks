@@ -1,0 +1,1703 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>So You Want to Learn Python: Python Tutorial For Kids! &#8212; Python Shinobi</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/pythonninja.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Python Shinobi</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../APythonShinobi.html">
+   Introduction to Being a Python Shinobi
+  </a>
+ </li>
+</ul>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="numericDataTypes.html">
+   Numeric data types
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Assignment_1.html">
+   Exercises
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="../excel2python.html">
+   Excel to Python
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../iammark.html">
+     A Step-by-Step Guide to Pandas Pivot Tables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../automateexcel.html">
+     Automate Your (Boring!) Excel Reporting with Python!
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../automateexcel3.html">
+     Automate These 3 (Boring!!) Excel Tasks with Python!
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../DjangoStuff.html">
+   Django
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/ninja/Python_Jutsu4Kids.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/daddyawesome/jbooks"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/daddyawesome/jbooks/issues/new?title=Issue%20on%20page%20%2Fninja/Python_Jutsu4Kids.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   So You Want to Learn Python: Python Tutorial For Kids!
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#so-you-want-to-learn-python-for-kids">
+     So You Want to Learn Python (for Kids!)
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-python">
+     What is Python?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#why-is-python-a-great-choice-for-kids">
+     Why is Python a Great Choice for Kids?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-can-i-help-my-kids-learn-python">
+     How Can I Help My Kids Learn Python?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python-for-kids-tutorial-one-syntax-loops-and-variables">
+     Python for Kids Tutorial One: Syntax, Loops, and Variables
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#what-concepts-will-be-covered">
+       What Concepts will be covered:
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#how-to-open-python-on-your-computer">
+       How to open Python on your computer:
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#python-tutorial-for-kids-creating-a-for-loop">
+       Python Tutorial for Kids: Creating a FOR loop
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#python-tutorial-for-kids-variables">
+       Python Tutorial for Kids: Variables
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#python-tutorial-for-kids-creating-a-while-loop">
+       Python Tutorial for Kids: Creating a while loop
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#python-tutorial-for-kids-the-importance-of-syntax">
+       Python Tutorial for Kids: The Importance of Syntax
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#python-tutorial-for-kids-importing-a-library">
+       Python Tutorial for Kids: Importing a Library
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#troubleshooting-python">
+       Troubleshooting Python
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#summary">
+       Summary
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python-for-kids-tutorial-two-all-about-lists">
+     Python for Kids Tutorial Two: All About Lists
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#concepts-covered-today">
+       Concepts covered today:
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#creating-a-list">
+       <strong>
+        Creating a List
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#how-can-we-access-information-from-a-list">
+       How can we access information from a list?
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#list-length">
+       List Length:
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#list-indexing">
+       <strong>
+        List Indexing
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#what-type-of-data-is-stored-within-a-list">
+       <strong>
+        What type of data is stored within a list?
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#lists-strings-and-integers-how-do-we-tell-them-apart">
+       Lists, strings, and integers! How do we tell them apart?
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#extra-challenge">
+       <strong>
+        Extra Challenge
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#modifying-lists">
+       <strong>
+        Modifying Lists
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#understanding-parameters">
+       Understanding Parameters
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#removing-parameters">
+       Removing Parameters
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#parentheses-versus-brackets">
+       <strong>
+        Parentheses Versus Brackets
+       </strong>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#discussion-questions-to-help-your-student-understand">
+         Discussion questions to help your student understand:
+        </a>
+       </li>
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#discussion-questions-test-exercises-to-help-your-student-understand">
+         Discussion questions/test exercises to help your student understand:
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       <strong>
+        Summary
+       </strong>
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python-for-kids-tutorial-three-lets-write-a-story">
+     Python for Kids Tutorial Three:
+     <strong>
+      Let’s Write a Story!
+     </strong>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#start-with-a-simple-story">
+       Start with a simple story
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#create-a-fill-in-the-blank-story">
+       Create a fill-in-the-blank story
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#now-lets-change-the-story-each-time-we-run-the-code">
+       Now let’s change the story each time we run the code
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#storing-variables-in-a-list">
+       Storing variables in a list
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#using-the-random-library-to-obtain-a-random-adjective">
+       Using the random library to obtain a random adjective
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#putting-it-all-together">
+       Putting it all together
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-for-kids-design-a-rock-paper-scissors-and-fortune-teller-game">
+   Python for Kids! Design a Rock, Paper, Scissors a​nd Fortune Teller Game
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     What is Python?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-brief-history-of-the-python-programming-language">
+     A brief history of the Python programming language
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python-coding-for-kids-key-concepts">
+     Python Coding for Kids – Key Concepts
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#syntax">
+       1. Syntax:
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#third-party-modules">
+       2. Third-party modules:
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#libraries">
+       3. Libraries:
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#strong-community">
+       4. Strong community:
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#user-friendly-data-structures">
+       5. User-friendly Data Structures:
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python-coding-game-1-rock-paper-scissors">
+     Python Coding Game #1: Rock, Paper, Scissors
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lets-decompose-rock-paper-scissors">
+     Let’s decompose Rock, Paper, Scissors
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#coding-a-python-game-step-by-step-instructions">
+       Coding a Python Game: Step-By-Step Instructions
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#step-1-importing-modules">
+       Step 1: Importing modules
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#step-2-creating-a-list-of-available-options">
+       Step 2:
+       <strong>
+        Creating a list of available options
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#step-3-getting-the-computer-to-choose-randomly">
+       Step 3:
+       <strong>
+        Getting the computer to choose randomly
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#step-4-lets-define-a-few-more-variables-before-we-start-our-game">
+       Step 4: Let’s define a few more variables before we start our game
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#step-5-creating-a-while-loop">
+       Step 5: Creating a
+       <strong>
+        While loop
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#step-6-allowing-user-input">
+       Step 6: Allowing
+       <strong>
+        User input
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#step-7-define-the-scenarios">
+       Step 7: Define the Scenarios
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#step-8-allowing-the-game-to-continue">
+       Step 8: Allowing the Game to Continue
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#step-9-displaying-the-final-score">
+       Step 9: Displaying the final score
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rock-paper-scissors-full-code">
+     Rock Paper Scissors – Full Code
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#lets-look-at-the-final-code-in-action">
+       Let’s look at the final code in action!
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python-coding-game-2-create-a-magic-8-ball-fortune-teller">
+     Python Coding Game #2: Create a Magic 8 Ball Fortune Teller
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#all-about-functions">
+       All About Functions
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#advantages-of-functions-in-coding">
+       Advantages of functions in coding
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#what-is-the-magic-8-ball">
+       <strong>
+        What is the Magic 8 Ball?
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#lets-decompose-the-magic-8-ball-game">
+       Let’s Decompose the Magic 8 Ball Game!
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#magic-8-ball-full-working-code">
+       Magic 8 Ball – Full Working Code
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#importing-the-randint-method">
+       <strong>
+        Importing the randint method
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#list-of-answers">
+       <strong>
+        List of answers
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#calling-the-magic8ball-function">
+       <strong>
+        Calling the Magic8Ball function
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#working-of-magic8ball-function">
+       <strong>
+        Working of Magic8Ball function
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-replay-function">
+       <strong>
+        The Replay() function
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#calling-the-replay-function-in-magic8ball-function">
+       <strong>
+        Calling the replay function in magic8ball function
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-if-elif-else-ladder">
+       The if-elif-else Ladder
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Let’s look at the final code in action!
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="so-you-want-to-learn-python-python-tutorial-for-kids">
+<h1>So You Want to Learn Python: Python Tutorial For Kids!<a class="headerlink" href="#so-you-want-to-learn-python-python-tutorial-for-kids" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="so-you-want-to-learn-python-for-kids">
+<h2>So You Want to Learn Python (for Kids!)<a class="headerlink" href="#so-you-want-to-learn-python-for-kids" title="Permalink to this headline">¶</a></h2>
+<p>Excellent choice! There’s plenty of reasons why learning Python is rising in popularity, but for kids,  <strong>Python is a great programming language with which to start learning to code</strong>.</p>
+<p>Python is a powerful, easy-to-read, high-level programming language. This means commands read like English words instead of complicated 0s and 1s and this makes it easy for kids to learn Python without a lot of experience.</p>
+<p>This  <strong>python tutorial for kids</strong>  will help parents and teachers get their kids learning Python.</p>
+<p><img alt="Learn Python Tutorial" src="https://teachyourkidscode.com/wp-content/uploads/2018/09/hitesh-choudhary-666995-unsplash-1024x576.jpg" /></p>
+</div>
+<div class="section" id="what-is-python">
+<h2>What is Python?<a class="headerlink" href="#what-is-python" title="Permalink to this headline">¶</a></h2>
+<p>If you are completely new to computer programming, you might be wondering what Python is.</p>
+<p>Python for Kids: How to get started</p>
+<p>Play Video</p>
+<p>Python is a programming language.</p>
+<p><a class="reference external" href="https://www.computerhope.com/jargon/p/proglang.htm">Programming languages</a>  are simply a special way of giving computers sets of instructions to execute. You are probably familiar with some of the most common programming languages like Java or PHP.</p>
+<p>Learning Python is becoming more and more popular and Python was recently listed as one of t<a class="reference external" href="https://www.inc.com/larry-kim/10-most-popular-programming-languages-today.html">he top 10 programming languages to know in 2018</a>. In fact, that’s why teaching Python programming for kids has become so popular.</p>
+<p>Python is a programming language that provides real skills for the future. It is used to develop software and apps in a variety of settings. Many computer programmers enjoy using python because it is easy to read and accessible even to beginners.</p>
+</div>
+<div class="section" id="why-is-python-a-great-choice-for-kids">
+<h2>Why is Python a Great Choice for Kids?<a class="headerlink" href="#why-is-python-a-great-choice-for-kids" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Learn Python Tutorial for Kids" src="https://teachyourkidscode.com/wp-content/uploads/2018/09/da446615-169b-4ebc-9ce2-b3e57d9f8284-1024x683.jpg" /></p>
+<p>Is Python easy to learn? Yes! The commands and syntax (rules for how code must be laid out) in Python are relatively simple compared to some other programming languages. This makes Python for kids easy to get started, even with no experience coding.</p>
+<p>Another great feature when looking to design python exercises for kids is that Python has a wide range of libraries that we can import whenever we need a particular feature. This modular feature keeps Python flexible and also lets you use others’ libraries to easily build some interesting (and fun!) initial projects.</p>
+</div>
+<div class="section" id="how-can-i-help-my-kids-learn-python">
+<h2>How Can I Help My Kids Learn Python?<a class="headerlink" href="#how-can-i-help-my-kids-learn-python" title="Permalink to this headline">¶</a></h2>
+<p>Whether you are a teacher or parent, getting kids started learning Python is simple. Today we will be going over some simple python tutorials for kids that will make getting started learning Python for kids super easy.</p>
+<p>In today’s Python lesson, we are going to be reviewing very simple programming commands so that you and your students can get familiar with how Python works, and how we can eventually use this program to develop fun games and projects for kids.</p>
+<p>This MASSIVE Python for Kids Tutorial is broken into three lessons. Each of these python lessons for kids will review some basic coding concepts and apply our knowledge to teach kids python. You can use the table of contents below to help Navigate through the Python tutorials so that you can go at your own student’s pace.</p>
+<p>Table of Contents</p>
+</div>
+<div class="section" id="python-for-kids-tutorial-one-syntax-loops-and-variables">
+<h2>Python for Kids Tutorial One: Syntax, Loops, and Variables<a class="headerlink" href="#python-for-kids-tutorial-one-syntax-loops-and-variables" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Python Tutorial for Kids" src="https://teachyourkidscode.com/wp-content/uploads/2018/09/fabian-grohs-437907-unsplash-839x1024.jpg" /></p>
+<div class="section" id="what-concepts-will-be-covered">
+<h3>What Concepts will be covered:<a class="headerlink" href="#what-concepts-will-be-covered" title="Permalink to this headline">¶</a></h3>
+<p>Today we are going to be exploring and learning about the following coding concepts:</p>
+<ul class="simple">
+<li><p><strong>Syntax</strong>: Syntax is essentially the ‘spelling and grammar’ of computer programming languages. Just as it may be difficult to understand an English sentence without proper spelling and grammar, a computer can’t understand their commands unless they are laid out properly. Syntax defines the proper way to lay out commands in programming languages.</p></li>
+<li><p><strong>Variables:</strong>  In computer programming, a variable is a type of value that can change. In this python tutorial, we will be exploring how we can change variables in Python, and how this will affect the output of our programming.</p></li>
+<li><p><strong>Loops</strong>: Loops contain a set of instructions that are continually repeated until a specific set of conditions are met. In this tutorial, we will learn to understand the difference between a  <strong>for loop</strong>  and a  <strong>while loop.</strong></p></li>
+</ul>
+</div>
+<div class="section" id="how-to-open-python-on-your-computer">
+<h3>How to open Python on your computer:<a class="headerlink" href="#how-to-open-python-on-your-computer" title="Permalink to this headline">¶</a></h3>
+<p>If you don’t yet have a way to code in Python and are unsure of how to begin, I personally like to use  <a class="reference external" href="https://conda.io/docs/user-guide/install/index.html">Anaconda</a>, which includes the Spyder program (also known as an IDE, an integrated development environment). You can download Anaconda for free  <a class="reference external" href="https://conda.io/docs/user-guide/install/index.html">here</a>.</p>
+<p>Or, if you are looking for a really simple way to get started with Python right away, you can use an online Python IDE editor. Simply open up this page, <a class="reference external" href="https://repl.it/languages/python3">https://repl.it/languages/python3</a>, and you will be ready to get started right away!</p>
+</div>
+<div class="section" id="python-tutorial-for-kids-creating-a-for-loop">
+<h3>Python Tutorial for Kids: Creating a FOR loop<a class="headerlink" href="#python-tutorial-for-kids-creating-a-for-loop" title="Permalink to this headline">¶</a></h3>
+<p>Let’s get started learning about and understanding  <strong>variables</strong> and  <strong>for loops</strong>  with the range command.</p>
+<p>Once you and your student have a Python editor open, enter this text:</p>
+<p>for x in range(1,6):
+print (x)</p>
+<p>and run the program. Make sure they have an indent on the second line!</p>
+<p>This is what you should see:</p>
+<p>1
+2
+3
+4
+5</p>
+<blockquote>
+<div><blockquote>
+<div></div></blockquote>
+</div></blockquote>
+<p>Ask your student to interpret what happened. Have them change the numbers in the range() method. (A  <strong>method</strong>  is just a name for a Python command.) What happens when you set the range to (1,3) what about (1,100). Your students will soon understand how to construct a python list of numbers within a certain range.</p>
+<p>The goals are for your student to understand the limits of the range method (it won’t print the last number, e.g. 6), and to understand what a variable is.</p>
+<p>We have just created a <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">loop</span></code>. What is a  <strong>for loop?</strong> As we discussed earlier, <strong>loops</strong> are commonly used in computer programming. Loops give computers a set of instructions that are continually repeated. In a  <strong>for loop,</strong> the computer executes the command  <strong>for</strong>  a fixed number of times. In our case, this is defined by the range.</p>
+<p>We can also have our program list our numbers in reverse order. Have your students enter the following text:</p>
+<p>for x in range(6,1,-1):
+print (x)</p>
+<p>Did you see what happened there? Now we can use this method to help us code a popular children’s song. Have your students enter the following text:</p>
+<p>for x in range(5,0,-1):
+print (x, ‘little monkeys jumping on the bed, 1 fell off and bumped his head, momma called the doctor and the doctor said, no more monkeys jumping on the bed’)</p>
+<p>You should see the following:</p>
+<p>5 little monkeys jumping on the bed, 1 fell off and bumped his head, momma called the doctor and the doctor said, no more monkeys jumping on the bed
+4 little monkeys jumping on the bed, 1 fell off and bumped his head, momma called the doctor and the doctor said, no more monkeys jumping on the bed
+3 little monkeys jumping on the bed, 1 fell off and bumped his head, momma called the doctor and the doctor said, no more monkeys jumping on the bed
+2 little monkeys jumping on the bed, 1 fell off and bumped his head, momma called the doctor and the doctor said, no more monkeys jumping on the bed
+1 little monkeys jumping on the bed, 1 fell off and bumped his head, momma called the doctor and the doctor said, no more monkeys jumping on the bed</p>
+</div>
+<div class="section" id="python-tutorial-for-kids-variables">
+<h3>Python Tutorial for Kids: Variables<a class="headerlink" href="#python-tutorial-for-kids-variables" title="Permalink to this headline">¶</a></h3>
+<p>Now let’s have fun with the  <strong>variables</strong>  in this code!</p>
+<p>In our case, the variable in this code is x. What happens when they change the variable  <strong>x</strong>  in the first line to a  <strong>y</strong>? Does this change if both variables are changed to a  <strong>y</strong>? If they change the x in both lines to instead be the word  <strong>RandomChickenVariable</strong>, will it still work? It’s a terrible variable name but yes! The variable does not have to be an ‘x’ or a ‘y’ it can be anything that you choose.</p>
+</div>
+<div class="section" id="python-tutorial-for-kids-creating-a-while-loop">
+<h3>Python Tutorial for Kids: Creating a while loop<a class="headerlink" href="#python-tutorial-for-kids-creating-a-while-loop" title="Permalink to this headline">¶</a></h3>
+<p>Let’s move on to now understanding <strong>while loops.</strong> Unlike  <strong>for loops</strong>, which typically stop after a fixed number of times,  <strong>while loops</strong>  will stop only when a specific condition is met.</p>
+<p>Have them enter this text:</p>
+<p>x=0
+while x is not 10:
+x=x+1
+print (x)
+print(‘done!’)</p>
+<p>You should see the following:</p>
+<p>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+done!</p>
+<p>Have them describe what the code is doing using the words variable, and loop. In this example, x is the  <strong>variable</strong>. x starts at 0 and increased by 1 each time the  <strong>loop</strong>  is run according to the formula x=x+1. Once 10 is reached, the condition to end the loop has been met, and the loop is finished. You will then see ‘done!’ printed.</p>
+<p>The last code we ran was a  <strong>for loop</strong>  – this is called a  <strong>while loop</strong>. Loops are useful because they can control our progress through our code; the ‘done!’ will not print until the loop has stopped running.</p>
+</div>
+<div class="section" id="python-tutorial-for-kids-the-importance-of-syntax">
+<h3>Python Tutorial for Kids: The Importance of Syntax<a class="headerlink" href="#python-tutorial-for-kids-the-importance-of-syntax" title="Permalink to this headline">¶</a></h3>
+<p>As we noted previously,  <strong>Syntax</strong>  is the spelling and grammar of computer programming. Computers will only be able to execute commands if we give it to them in a language that they understand. To help your student understand the importance of syntax in Python, have them remove the indent in print x so that it looks like this.</p>
+<p>x=0
+while x is not 10:
+x=x+1
+print (x)
+print(‘done!’)</p>
+<p>Let your student play with the code. When you discuss the difference between these two versions with your student, the ultimate conclusion should be that the boundaries of loops are defined by the indents beneath their opening “for” or “while” line. The loop will not perform any code below the unindented line. However, if you try this:</p>
+<p>x=0
+while x is not 10:
+x=x+1
+print (x)
+print(‘done!’)</p>
+<p>the code will fail with a message that looks something like this:</p>
+<p>File “<ipython-input-10-ebd4d8eb92d4>”, line 5
+print(‘done!’)
+^
+IndentationError: unexpected indent</p>
+<p>Notice that Python sometimes tries to help you see where your error is by putting a carat ^ in the error message. This error occurs because there is no reason that the print(‘done!’) command should be indented. This is an error in the syntax. The computer cannot understand the command because the ‘spelling and grammar’ is wrong.</p>
+<p><strong>Useful tip:</strong> If your program gets stuck, you can press ctrl-c in the console to cancel the program, or click the red square to stop operation. Want to see what that looks like? Run this with your student:</p>
+<p>x=0
+while x is not 10:
+print (x)
+x=x+1</p>
+<p>Have them explain why it is not working. The answer is that the value stored in the x variable never reaches 10 within the loop, so it will run forever and keep printing 0s.</p>
+</div>
+<div class="section" id="python-tutorial-for-kids-importing-a-library">
+<h3>Python Tutorial for Kids: Importing a Library<a class="headerlink" href="#python-tutorial-for-kids-importing-a-library" title="Permalink to this headline">¶</a></h3>
+<p>Our last exercise for this lesson will involve using a library I mentioned earlier. In this exercise, we will be turning our computer into a digital dice!</p>
+<p>Type in this code:</p>
+<p>from random import randint
+x = randint(1,4)
+print(“dice roll:”)
+print(x)</p>
+<p>The library is  <em>random</em>, and the method we are taking from it is  <em>randint</em>_._ <code class="docutils literal notranslate"><span class="pre">random</span></code> is a type of module in Python that gives us several functions available for use.</p>
+<p><code class="docutils literal notranslate"><span class="pre">.randint(x,</span> <span class="pre">y)</span></code> is a type of function available through <code class="docutils literal notranslate"><span class="pre">random</span></code>. This function takes two parameters (two variables<code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>), it will select a random number between <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>, including <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>. You can set x and y to whatever numbers you like. In this example, we chose 1,6, just like a dice!</p>
+<p>If there were many functions we knew we would need, we might just type  <em>import random</em>  – we’ll cover that another time!</p>
+<p>Have your student describe what the code does. Once they have completed the above task, you can think with them about other modifications that can be made, such as changing the minimum and maximum of the numbers that can be produced or deciding to only roll again if the number is less than or equal to five.</p>
+<p>This might look like this:</p>
+<p>from random import randint
+roll=randint(1, 6)
+print(roll)
+if roll &lt; 5 :
+repeat=roll
+print(roll)
+else:
+print(“You lose”)</p>
+</div>
+<div class="section" id="troubleshooting-python">
+<h3>Troubleshooting Python<a class="headerlink" href="#troubleshooting-python" title="Permalink to this headline">¶</a></h3>
+<p>If your code does not run, common errors are found in parentheses, colons, and indents, or the lack thereof.</p>
+<ul class="simple">
+<li><p>Logic statements like if, while, and for need to have their lines ended with a colon.</p></li>
+<li><p>For loops are only in effect for the lines that are indented underneath them. Make sure you only have one indent more than the for loop!</p></li>
+</ul>
+</div>
+<div class="section" id="summary">
+<h3>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h3>
+<p>After these exercises, your student now has had experience working with variables, loops, logic statements, and importing functions. Welcome to Python!</p>
+</div>
+</div>
+<div class="section" id="python-for-kids-tutorial-two-all-about-lists">
+<h2>Python for Kids Tutorial Two: All About Lists<a class="headerlink" href="#python-for-kids-tutorial-two-all-about-lists" title="Permalink to this headline">¶</a></h2>
+<p>Programming often has a lot of words that sound intimidating to kids learning python. One important thing to keep in mind as we study programming with Python is that every problem can and should be broken down into multiple steps. This helps us make clean code that other people can read without confusion. The following lessons introduce working with, editing, and storing  <strong>data</strong>, which is just a fancy word for  <strong>information</strong>.</p>
+<div class="section" id="concepts-covered-today">
+<h3>Concepts covered today:<a class="headerlink" href="#concepts-covered-today" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Data types – there are multiple types of data that are defined in Python. We will be learning them gradually as we work with more and more types of Python commands!</p></li>
+<li><p>Lists – a set of information in a specific order that can be changed</p></li>
+</ul>
+<p><img alt="Learn Python: All About Data" src="https://teachyourkidscode.com/wp-content/uploads/2018/10/Learn-Python-All-About-Data-1024x683.jpg" /></p>
+<p>Data, data, data! What does it all mean?!</p>
+</div>
+<div class="section" id="creating-a-list">
+<h3><strong>Creating a List</strong><a class="headerlink" href="#creating-a-list" title="Permalink to this headline">¶</a></h3>
+<p>Lists are very easy to create in Python. We simply put a series of comma-separated items between square brackets. We can create a list of words by typing in the following:</p>
+<p>myList = [‘I’, “don’t”, “like”, “pickles”, “in”,”my”, “sandwiches”]</p>
+<p>This action is called  <strong>declaration</strong> in programming; we have just declared the myList variable. This list stores a set of words. The two square brackets are important to define the list. We can use commands to access information about the list and to edit the data in the list.</p>
+</div>
+<div class="section" id="how-can-we-access-information-from-a-list">
+<h3>How can we access information from a list?<a class="headerlink" href="#how-can-we-access-information-from-a-list" title="Permalink to this headline">¶</a></h3>
+<p>Let’s say we want some basic information about this list. How long is it? What is the first piece of data stored? How about the last? What type of data do we have stored in it? We will now learn a variety of python commands to access information from our list.</p>
+</div>
+<div class="section" id="list-length">
+<h3>List Length:<a class="headerlink" href="#list-length" title="Permalink to this headline">¶</a></h3>
+<p>If we want to know the length of our list, we enter this command:</p>
+<p>print (len(myList))</p>
+<p>You should see something that looks like this:</p>
+<blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><p>len(myList)
+7</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<p>The result of this is the length of your data.</p>
+</div>
+<div class="section" id="list-indexing">
+<h3><strong>List Indexing</strong><a class="headerlink" href="#list-indexing" title="Permalink to this headline">¶</a></h3>
+<p>The items in our list are indexed so that we can retrieve them easier. We can use the index operator [] to find an item in our list. To look for the first piece of data, have your student type in myList[1]. What do they notice? Is it what they expected?</p>
+<blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><p>print (myList[1])
+‘don’t’</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<p>What your student will get in return is “don’t” printed out. Let them experiment and try to get “I” as an answer. The correct way is to command the console to print myList[0]. This shows your student that lists in Python are  <strong>indexed</strong>  starting with 0. Indexing looks like this:</p>
+<p><img alt="" src="https://teachyourkidscode.com/wp-content/uploads/2018/10/Python-List-Index-1024x175.png" /></p>
+<p>What happens when they search for the last element of the list? Let your student figure out that myList[7] will throw an error. Discuss with them that this occurs because, even though the length of the list is 7, the indexing beginning at  <strong>0</strong>  means that the last element is at index  <strong>6</strong>. This might be confusing at first, but with more practice, your student will get used to it quickly!</p>
+<p><img alt="" src="https://teachyourkidscode.com/wp-content/uploads/2018/10/Learn-Python-All-About-Lists-1024x644.jpg" /></p>
+<p>Today’s Python lesson is all about Python Lists</p>
+</div>
+<div class="section" id="what-type-of-data-is-stored-within-a-list">
+<h3><strong>What type of data is stored within a list?</strong><a class="headerlink" href="#what-type-of-data-is-stored-within-a-list" title="Permalink to this headline">¶</a></h3>
+<p>Now have your student enter type(myList). This will return something like the following:</p>
+<blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><p>print (type(myList))
+&lt;class ‘list’&gt;</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<p>Hm. That’s not quite what I wanted to ask. I want to know what type of information is stored  <em>inside</em>  the list. Let’s try this:</p>
+<blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><p>print (type(myList[1]))
+&lt;class ‘str’&gt;</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<p>That looks better! ‘Str’ stands for  <strong>string</strong>.  <strong>Strings</strong> are bits of text; you can tell that a variable is a string when it has single or double quotes around it. If you look back at your previous commands, you’ll see that we declared the myList list entries to all have quotes around them.</p>
+</div>
+<div class="section" id="lists-strings-and-integers-how-do-we-tell-them-apart">
+<h3>Lists, strings, and integers! How do we tell them apart?<a class="headerlink" href="#lists-strings-and-integers-how-do-we-tell-them-apart" title="Permalink to this headline">¶</a></h3>
+<p>Let’s look in detail at 3 different types of data:  <strong>lists, strings,</strong> and  <strong>integers.</strong></p>
+<p>Your student can play around with this and become more familiar by defining two more variables.</p>
+<p>pickles = ‘I don’t like pickles in my sandwiches’
+pickles2= [“ I don’t like pickles in my sandwiches”]</p>
+<p>Have them run the  <strong>type</strong>  and  <strong>len</strong>  commands on each of these and compare it with the results of myList. What do they notice? Let them explore on their own with their own variables if they want; part of the fun of programming is being able to easily create test examples to try out whatever weird ideas you have.</p>
+<p>Here is what we get when we run the  <strong>len</strong>  commands on our two variables:</p>
+<blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><p>print (len(pickles))
+37
+print (len(pickles2))
+1</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<p>Here is what we get when we run the <strong>type</strong>  commands on our two variables:</p>
+<blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><p>type(pickles)
+&lt;class ‘str’&gt;
+type(pickles2)
+&lt;class ‘list’&gt;</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<p>Ultimately, the point is that the  <em>pickles</em>  variable is a string, not a list. The <strong>square brackets</strong>  define a list. This variable will have a length of 37 because the  <strong>len</strong>  function counts the characters in the string. On the other hand,  <em>pickles2</em>  is a list with one element in it, surrounded by quotes, which is why it has a length of  <strong>one</strong>.</p>
+<p>So far, we have learned about two types of data**: lists**  and  <strong>strings</strong>. Ask your student to look at the information we have gotten from the Python console. Do they see any other kind of data? Guide them to see the numbers 1 and 39, and have them type in  <strong>type(39)</strong> and  <strong>type(1)</strong>. The resulting  <em>int</em> answer represents  <strong>an integer</strong>, which is any whole number, negative, positive, or 0.</p>
+<blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><p>type(39)
+&lt;class ‘int’&gt;</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="extra-challenge">
+<h3><strong>Extra Challenge</strong><a class="headerlink" href="#extra-challenge" title="Permalink to this headline">¶</a></h3>
+<p><img alt="Python Lists: All about data" src="https://teachyourkidscode.com/wp-content/uploads/2018/10/Python-Lists-All-about-data-1024x683.jpg" /></p>
+<p>Integers, strings and lists! Are you confused yet? There’s a lot of data stored in simple Python commands</p>
+<p>If your student is interested, have them try to access the first letter of the  <em>pickles</em> string!</p>
+<p>Let them try to guess how to do it with the hint: “it’s similar to how you access information in a list.”</p>
+<p>The answer is pickles[0]. What type of data is pickles[0]? It is also a string. A string, it turns out, is made of multiple smaller strings!</p>
+<p>Here are some examples of how we can access letters in our pickles string:</p>
+<blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><p>pickles[0]
+‘I’
+pickles[21]
+‘i’
+pickles[14]
+‘i’
+pickles[13]
+‘p’</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<p>Your student is learning about how Python stores data. They have now seen three types of variables in Python: strings, integers, and lists. Lists are able to store information in a specific order, and are indexed beginning from 0. This means that the last information stored will be at the position with a value one less than the length.</p>
+</div>
+<div class="section" id="modifying-lists">
+<h3><strong>Modifying Lists</strong><a class="headerlink" href="#modifying-lists" title="Permalink to this headline">¶</a></h3>
+<p>We have seen in our recently completed steps that lists have:</p>
+<ul class="simple">
+<li><p>Indexing that begins with 0</p></li>
+<li><p>Built-in attributes like length</p></li>
+</ul>
+<p>Now we will look at existing commands and methods we can use with lists to modify their information.</p>
+<p>Let’s return to our test list, which we will declare again as:</p>
+<p>myList = [“I”, “do not”, “like”, “pickles”, “in”,”my”, “sandwiches.”]</p>
+<p>Let’s try to add some words. Enter the following commands:</p>
+<p>myList.insert(4,”or”)
+myList.insert(5,”tomatoes”)</p>
+<p>Type in myList to look at the contents of the list again.</p>
+<p>myList</p>
+<p>Ask your student to describe what they think has happened. Encourage them to type in the command again, this time with a different number and a different word. What happens? Is it possible for the number to be too big? Let them experiment as much as they want.</p>
+<blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><p>myList.insert(4,”or”)
+myList.insert(5,”tomatoes”)
+myList
+[‘I’, ‘don’t’, ‘like’, ‘pickles’, ‘or’, ‘tomatoes’, ‘in’, ‘my’, ‘sandwiches’]</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<p>Note: I encourage verbal descriptions of what is happening because when a child (or anyone, really) is given an instrument to use, it is easy to just begin banging away and typing things out. Describing code in words slows our brains down and is a good step in working on laying out the logic behind each line of code.</p>
+</div>
+<div class="section" id="understanding-parameters">
+<h3>Understanding Parameters<a class="headerlink" href="#understanding-parameters" title="Permalink to this headline">¶</a></h3>
+<p>Here, the important concepts to touch upon with your student is that there are  <strong>two</strong>  terms inside the parentheses. Now you can discuss with your student that each of these terms is called a  <strong>parameter</strong> in Python. The  <em>first parameter</em>  determines the index location at which the  <em>second parameter</em>  will be inserted. The second parameter, in this case, does not necessarily have to be a string; as we learned in the last lessons, a list can hold different types of variables – they do not all have to be the same!</p>
+</div>
+<div class="section" id="removing-parameters">
+<h3>Removing Parameters<a class="headerlink" href="#removing-parameters" title="Permalink to this headline">¶</a></h3>
+<p>Another command we can use is  <strong>remove()</strong>. The remove method takes one parameter, which is the value of the entry to remove. By values, we mean the information stored in each list entry. Have your student make a copy of the list by typing</p>
+<p>testList=myList</p>
+<p>Have them remove the entry “don’t” from testList. Let them brainstorm and try things out – if they get confused, remind them of the previous exercises. Commands like insert and remove modify existing lists. So, we know that our command for remove will look like testList.remove().We also know that the remove() method needs a parameter because, otherwise, it would not know which list entry to remove!</p>
+<p>Therefore, our resulting command is</p>
+<blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><p>testList.remove(“don’t”)
+testList
+[‘I’, ‘like’, ‘pickles’, ‘or’, ‘tomatoes’, ‘in’, ‘my’, ‘sandwiches’]</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<p>Now is a good time for us to discuss an important part of  <strong>Python syntax</strong>. After that, we will do some more practice with list modification.</p>
+</div>
+<div class="section" id="parentheses-versus-brackets">
+<h3><strong>Parentheses Versus Brackets</strong><a class="headerlink" href="#parentheses-versus-brackets" title="Permalink to this headline">¶</a></h3>
+<p>Now that we have seen that arrays have built-in features like indexing and attribute like length, your student might have noticed that some commands require [brackets] and others (parentheses). This is part of Python syntax;  <strong>syntax</strong>  refers to the way that a programming language uses punctuation and spacing to organize its flow and operation.</p>
+<p>In general, brackets indicate that data is being created or accessed. One example of data being created is the declaration of our variable myList. One example of data being accessed is when we got the first entry in the list by typing in myList[0].</p>
+<div class="section" id="discussion-questions-to-help-your-student-understand">
+<h4>Discussion questions to help your student understand:<a class="headerlink" href="#discussion-questions-to-help-your-student-understand" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>How can you tell that a variable is a list when you are creating it?</p></li>
+<li><p>What happens if we try to use parentheses to create a list?</p></li>
+<li><p>What do we use when we want to access a certain index value in a list?</p></li>
+</ul>
+<p>As we discussed in the previous lesson,  <strong>parameters</strong>  are the inputs that we provide to each Python command, although not every command needs parameters. Parameters go in parentheses.</p>
+</div>
+<div class="section" id="discussion-questions-test-exercises-to-help-your-student-understand">
+<h4>Discussion questions/test exercises to help your student understand:<a class="headerlink" href="#discussion-questions-test-exercises-to-help-your-student-understand" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>What is a parameter?</p></li>
+<li><p>What happens if we try to use brackets instead of parentheses for a list-modifying command like insert or remove?</p></li>
+<li><p>Why do you think it is important for there to be a difference between bracket usage and parentheses usage?</p>
+<ul>
+<li><p>This is an important and very fundamental concept! Bracket and parentheses differentiation is important because it avoids confusion between whether the programmer is giving a command or asking for information.</p></li>
+<li><p>Example: if we have listA=[2,3,4,5], then we have list entries that are numbers. If there were no difference between brackets and parentheses, then remove(2) would be confusing because we would not be able to tell if we wanted to remove the  <strong>value</strong>  2 (at index 0), or the value 4 (which is at  <strong>index</strong>  2)</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="id1">
+<h3><strong>Summary</strong><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Your student is learning about how to manipulate variables in Python; we value coding because it is able to handle large amounts of data at a time. By working with lists, your student is learning how to access data using parameter inputs and gaining important basic knowledge of syntax.</p>
+</div>
+</div>
+<div class="section" id="python-for-kids-tutorial-three-lets-write-a-story">
+<h2>Python for Kids Tutorial Three:  <strong>Let’s Write a Story!</strong><a class="headerlink" href="#python-for-kids-tutorial-three-lets-write-a-story" title="Permalink to this headline">¶</a></h2>
+<p>Now, we are going to use our new Python skills to make something that is unique and all our own! Let’s write a story where the nouns and adjectives change each time we create the story.</p>
+<div class="section" id="start-with-a-simple-story">
+<h3>Start with a simple story<a class="headerlink" href="#start-with-a-simple-story" title="Permalink to this headline">¶</a></h3>
+<p>Here is an example of what we will be doing:</p>
+<p>name1=”Anna”
+adj1=”happy”
+sentence1=name1+” woke up in the morning feeling very “+adj1+”.”
+print sentence1</p>
+<p>After running this code, the variable sentence1 now has the value ‘Anna woke up in the morning feeling very happy.’ The variables noun1 and adj1 are both strings – so is sentence 1. However, sentence 1 uses noun1 and adj1 within its value to combine the strings!</p>
+</div>
+<div class="section" id="create-a-fill-in-the-blank-story">
+<h3>Create a fill-in-the-blank story<a class="headerlink" href="#create-a-fill-in-the-blank-story" title="Permalink to this headline">¶</a></h3>
+<p>Now for the fun part! You can now create your own fill-in-the-blank story or use ours to create a funny story that your class will love. Write four to five sentence variables that use, in total,  <strong>three noun strings</strong>,  <strong>three adjective strings</strong>, and  <strong>three place strings</strong>.</p>
+<p>Or, if you want, you can use these:</p>
+<p>sentence1= “Last year, I went on a “+adj1+” trip to “+place1+”.”
+sentence2= “The weather there was “+adj2+”, and I couldn’t wait to eat a big “+noun1+” while I was there.”
+sentence3=”Next year, I want to go to “+place2+”, because I’ve always wanted to see the “+adj3+” “+noun2+”.”</p>
+<p>Notice that we have to include spaces before and after using a string variable! Otherwise, the words will be smushed together.</p>
+<p>If you run this code right now, what do you think the problem will be? Are the variables noun1, adj1, place1 and so on declared yet? They are not. Let’s do that now.</p>
+<p>Now it’s time to declare our variables. Have your students come up with a random list of nouns, places  and  adjectives and randomly declare them to each variable.</p>
+<p>Here’s what we chose:</p>
+<p>adj1=”smelly”
+adj2=”silly”
+adj3=”adorable”
+place1=”Toronto”
+place2=”Texas”
+place3=”Mexico”
+noun1=”chair”
+noun2=”shoulder”
+noun3=”statue”</p>
+<p>Once you have finished setting up the assignments for each variable, combine it with your sentence variables. The order in which we enter commands matters in Python, so if you define your sentences first before adding the pieces of random variable assignment code we just finished, your code will throw an error. Make sure you define all your variables before you try to use them! To print all your sentences together at the end, you can use the print command like this:</p>
+<p>print sentence1,sentence2,sentence3</p>
+<p>Here is what the final code looks like:</p>
+<p>adj1=”smelly”
+adj2=”silly”
+adj3=”adorable”
+place1=”Toronto”
+place2=”Texas”
+place3=”Mexico”
+noun1=”chair”
+noun2=”shoulder”
+noun3=”statue”
+sentence1= “Last year, I went on a “+adj1+” trip to “+place1+”.”
+sentence2= “The weather there was “+adj2+”, and I couldn’t wait to eat a big “+noun1+” while I was there.”
+sentence3=”Next year, I want to go to “+place2+”, because I’ve always wanted to see the “+adj3+” “+noun2+”.”
+print (sentence1,sentence2,sentence3)</p>
+<p>Here’s how it looks when you run the code:</p>
+<p>Last year, I went on a smelly trip to Toronto. The weather there was silly, and I couldn’t wait to eat a big chair while I was there. Next year, I want to go to Texas, because I’ve always wanted to see the adorable shoulder.</p>
+</div>
+<div class="section" id="now-lets-change-the-story-each-time-we-run-the-code">
+<h3>Now let’s change the story each time we run the code<a class="headerlink" href="#now-lets-change-the-story-each-time-we-run-the-code" title="Permalink to this headline">¶</a></h3>
+<p>The above method is the simplest way to create a fill-in-the-blank story using python. However, we want to create a story which changes every time we run the code. We want our program to be able to choose a random noun, adjective or place from our list and automatically place it in our story.</p>
+</div>
+<div class="section" id="storing-variables-in-a-list">
+<h3>Storing variables in a list<a class="headerlink" href="#storing-variables-in-a-list" title="Permalink to this headline">¶</a></h3>
+<p>We could declare adj1 to always be “Smelly,” but then our story would not change each time we ran our code. We want a variety of names for our story to choose from! Let’s store the options in a list.</p>
+<p>adjList=[“wild”,”fluffy”,”hilarious”]</p>
+<p>Now, we want to randomly choose which adjectives will be assigned to adj1, adj2, and adj3. Do you remember how to do that? We will be using the random library again, back from our lessons on numbers.</p>
+<p>An example of random being used is as follows:</p>
+<p>from random import randint
+roll=randint(1, 6)
+print(roll)</p>
+</div>
+<div class="section" id="using-the-random-library-to-obtain-a-random-adjective">
+<h3>Using the random library to obtain a random adjective<a class="headerlink" href="#using-the-random-library-to-obtain-a-random-adjective" title="Permalink to this headline">¶</a></h3>
+<p>How can we use the  randint  method to obtain a random adjective? Think about this for a while. What kind of variable type is the <strong>index</strong> of a list? When you have an idea, try writing out a bit of code that assigns a random name to the variables adj1, adj2  and  adj3.</p>
+<p>When you’re ready, compare your idea to this following bit of code:</p>
+<p>minindex=0
+maxindex=len(adjList)-1</p>
+<p>index1=randint(minindex,maxindex)
+adj1=adjList[index1]</p>
+<p>index2=randint(minindex,maxindex)
+adj2=adjList[index2]</p>
+<p>index3=randint(minindex,maxindex)
+adj3=adjList[index3]</p>
+<p>In writing this code, my goal was to generate a random number that corresponds to an index of every adjective in the list of possible adjectives. I did this by</p>
+<ol class="simple">
+<li><p>defining the minimum and maximum possible index values (lines 1 and 2). Because indexing begins with 0, the highest number that we can index is always the length of the list minus 1.</p></li>
+<li><p>defining an index which takes a random number with these minimum and maximum values (line 3)</p></li>
+<li><p>storing the adjective at this index as the variable to be used (line 4)</p></li>
+<li><p>repeating this three times</p></li>
+</ol>
+<p>Now that we’ve taken care of the adjective variable assignments, do the same with the other variables! You will want to create a  placeList  and a  nounList  and use the  randint  method to select a random variable from your list.</p>
+</div>
+<div class="section" id="putting-it-all-together">
+<h3>Putting it all together<a class="headerlink" href="#putting-it-all-together" title="Permalink to this headline">¶</a></h3>
+<p>Once you have finished setting up the random assignments for each variable, combine it with your sentence variables. The order in which we enter commands matters in Python, so if you define your sentences first before adding the pieces of random variable assignment code we just finished, your code will throw an error. Make sure you define all your variables before you try to use them!</p>
+<p>Your final code will look something like this:</p>
+<p>from random import randint
+adjList=[“wild”,”fluffy”,”hilarious”]
+placeList=[“Chicago”,”China”,”Brazil”]
+nounList=[“telephone”, “karate”, “toilet”]
+minindex=0
+maxindex=len(adjList)-1
+index1=randint(minindex,maxindex)
+adj1=adjList[index1]
+index2=randint(minindex,maxindex)
+adj2=adjList[index2]
+index3=randint(minindex,maxindex)
+adj3=adjList[index3]
+minindex=0
+maxindex=len(placeList)-1
+index1=randint(minindex,maxindex)
+place1=placeList[index1]
+index2=randint(minindex,maxindex)
+place2=placeList[index2]
+index3=randint(minindex,maxindex)
+place3=placeList[index3]
+minindex=0
+maxindex=len(adjList)-1
+index1=randint(minindex,maxindex)
+noun1=nounList[index1]
+index2=randint(minindex,maxindex)
+noun2=nounList[index2]
+index3=randint(minindex,maxindex)
+noun3=nounList[index3]
+sentence1= “Last year, I went on a “+adj1+” trip to “+place1+”.”
+sentence2= “The weather there was “+adj2+”, and I couldn’t wait to eat a big “+noun1+” while I was there.”
+sentence3=”Next year, I want to go to “+place2+”, because I’ve always wanted to see the “+adj3+” “+noun2+”.”
+print (sentence1,sentence2,sentence3)</p>
+<p>Here’s what I got the first time I ran this code:</p>
+<p>Last year, I went on a fluffy trip to Brazil. The weather there was fluffy, and I couldn’t wait to eat a big telephone while I was there. Next year, I want to go to Brazil, because I’ve always wanted to see the hilarious karate.</p>
+<p>And here’s what I got the second time I ran this code:</p>
+<p>Last year, I went on a hilarious trip to China. The weather there was fluffy, and I couldn’t wait to eat a big telephone while I was there. Next year, I want to go to Brazil, because I’ve always wanted to see the wild karate.</p>
+<p>As you can see, the story changes each time you run the code. The more variables you define the more options for your story and the more hilarious combinations you may create!</p>
+</div>
+</div>
+</div>
+<div class="section" id="python-for-kids-design-a-rock-paper-scissors-and-fortune-teller-game">
+<h1>Python for Kids! Design a Rock, Paper, Scissors a​nd Fortune Teller Game<a class="headerlink" href="#python-for-kids-design-a-rock-paper-scissors-and-fortune-teller-game" title="Permalink to this headline">¶</a></h1>
+<p><img alt="" src="https://teachyourkidscode.com/wp-content/uploads/2019/09/Learn-Python-For-Kids-Rock-Paper-Scissors-and-Magic-8-Ball.png" /></p>
+<div class="section" id="id2">
+<h2>What is Python?<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p><img alt="" src="https://teachyourkidscode.com/wp-content/uploads/2019/09/Learn-Python-1024x666.jpg" /></p>
+<p>What is python? A snake? A big heavy snake? Yes, actually, a python is one of the biggest snakes that exists in this world. But the word ‘python’ is also famous for something else. Yes, if you come from a programming background, then you may have heard this word. In the programming world, the word ‘python’ does not means a big snake, but it surely reflects something big.</p>
+<p>Python is a high-level programming language that is well known to programmers. It is one of the most popular and widely used  <span class="xref myst">programming languages</span>  worldwide. Python is one of the easiest programming languages to learn for kids. In this tutorial, we will learn a few basic concepts of python programming language with the help of some fun games you will create in python.</p>
+</div>
+<div class="section" id="a-brief-history-of-the-python-programming-language">
+<h2>A brief history of the Python programming language<a class="headerlink" href="#a-brief-history-of-the-python-programming-language" title="Permalink to this headline">¶</a></h2>
+<p>But first of all, why would you name a programming language python? Well, when Guido van Rossum, the creator of Python was implementing the code for the language, he used to read scripts from Monty Python’s Flying Circus TV series. I guess this came in his mind as he named the language Python! Although python first appeared in 1990, it took some time to become popular.</p>
+<p>Today,  Python is one of the most popular programming languages. It is used in web application development, client-side, server-side development, machine learning, Scientific and Numeric Computing, and many more areas. But what makes python so successful? Let’s discuss a few of its features briefly.</p>
+</div>
+<div class="section" id="python-coding-for-kids-key-concepts">
+<h2>Python Coding for Kids – Key Concepts<a class="headerlink" href="#python-coding-for-kids-key-concepts" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="syntax">
+<h3>1. Syntax:<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h3>
+<p>Syntax is the spelling and grammar of programming languages. One of the best features of python is its intuitive and easy to read syntax. This makes it much easier for beginners to learn python. As compared to other programming languages such as Java, C/C++, Javascript, python’s syntax is much simpler. It is much more error-free.</p>
+</div>
+<div class="section" id="third-party-modules">
+<h3>2. Third-party modules:<a class="headerlink" href="#third-party-modules" title="Permalink to this headline">¶</a></h3>
+<p>Modules are like code libraries that give us access functions we may want to include in our program. Third-party modules are always useful when it comes to development. The Python Package Index (PyPI) contains a wide range of python third-party modules that are capable of interacting with other languages and platforms.</p>
+</div>
+<div class="section" id="libraries">
+<h3>3. Libraries:<a class="headerlink" href="#libraries" title="Permalink to this headline">¶</a></h3>
+<p>What is a library used for? A library is mostly used for providing external features that are not supported by a programming language or framework. It is always efficient to use libraries to provide extended functionalities. Python supports an extensive amount of libraries for functionalities such as internet protocols, web services tools, string operations, and operating system interfaces.</p>
+</div>
+<div class="section" id="strong-community">
+<h3>4. Strong community:<a class="headerlink" href="#strong-community" title="Permalink to this headline">¶</a></h3>
+<p>A beginner may wonder why community matters for a programming language! Python is an open-source programming language, that means anyone can contribute to it. Python’s strong community shares knowledge with each others, works on issues and resolve bugs. Python’s community is very strong and also really helpful for beginners!</p>
+</div>
+<div class="section" id="user-friendly-data-structures">
+<h3>5. User-friendly Data Structures:<a class="headerlink" href="#user-friendly-data-structures" title="Permalink to this headline">¶</a></h3>
+<p>Data structures are a bit of an advanced area for beginners but it is one of the most important parts of a programming language. These are very useful while programming and are used commonly in the programming world. Data structures in python are very easy and user-friendly. Unlike other programming languages, python’s data structures are easy to learn.</p>
+</div>
+</div>
+<div class="section" id="python-coding-game-1-rock-paper-scissors">
+<h2>Python Coding Game #1: Rock, Paper, Scissors<a class="headerlink" href="#python-coding-game-1-rock-paper-scissors" title="Permalink to this headline">¶</a></h2>
+<p><img alt="" src="https://teachyourkidscode.com/wp-content/uploads/2019/09/Rock-Paper-Scissors-683x1024.jpg" /></p>
+<p>Rock, Paper and Scissors. Are you familiar with these three words being spoken at the same time? I think you are. Rock, Paper, and Scissors is a popular game. My brother and I used to play rock, paper, scissors to decide who would get to choose the morning cartoons before school!</p>
+<p>Rock, paper scissors is played between two people, both of them choosing one out of the three options. Then, according to certain rules, one of the two is declared the winner. We will discuss these rules further and moreover, we will implement Rock, Paper, and Scissors in the python programming language.</p>
+<p>Nervous? Well, no need to get nervous because it is not as tough it sounds! As I mentioned earlier, Python is one of the easiest programming languages and it does not take much time to understand it. So let’s start.</p>
+</div>
+<div class="section" id="lets-decompose-rock-paper-scissors">
+<h2>Let’s decompose Rock, Paper, Scissors<a class="headerlink" href="#lets-decompose-rock-paper-scissors" title="Permalink to this headline">¶</a></h2>
+<p>Before moving to the coding part, the first rule of programming and development is always to analyze and break down what we are going to implement. Breaking down our problems into smaller steps is called  <strong>decomposition</strong>. Here, we are going to create a program for the game, Rock, Paper, and Scissors. Let’s divide the problem into parts.</p>
+<ol class="simple">
+<li><p><strong>The players</strong>. Remember, we need two people in this game. For this program, we will have one user and the other will be the computer. Both the user and computer are going to enter their inputs. Don’t worry about the computer’s input, it is going to be the most interesting part.</p></li>
+<li><p><strong>The rules.</strong>  Next, we have to create example scenarios to decide who is the winner of each turn. Let’s discuss these scenarios briefly:</p></li>
+</ol>
+<p>– It is a tie when both the user and the computer makes the same choice.</p>
+<p>– Rock wins over Scissors and loses to Paper</p>
+<p>– Paper wins over Rock and loses to Scissors</p>
+<p>– Scissors wins over Paper and loses to Rock</p>
+<ol class="simple">
+<li><p><strong>Exit strategy.</strong>  There will always be an option to finish the game.</p></li>
+<li><p><strong>Who won?</strong>  We also need to keep the count of points earned by both. When individuals play rock, paper, scissors they often make it a best of 3 or best of 5 game!</p></li>
+</ol>
+<p>So, now we know what we are going to do. Let’s get coding!</p>
+<div class="section" id="coding-a-python-game-step-by-step-instructions">
+<h3>Coding a Python Game: Step-By-Step Instructions<a class="headerlink" href="#coding-a-python-game-step-by-step-instructions" title="Permalink to this headline">¶</a></h3>
+<p>I have created a fully working code for Rock, Paper and Scissors. You can find the full code at the end of this post. Let’s discuss it step by step. I would suggest going through each line of code together in your classroom and discuss it as you go.  At  the end, students will have a fully working Rock, Paper, Scissors game that they can play against the computer!</p>
+<p>This game was simply created using  <strong>variables</strong>,  <strong>list</strong>,  <strong>while loop</strong>,  <strong>if-elif-else ladder</strong>  and a special <strong>randint  method</strong>  that we imported from  <strong>random module</strong>. We will review all of these beginner coding concepts below!</p>
+<p>If you don’t have a python editor and are looking for a really simple way to get started with Python right away, you can use an online Python IDE editor. Simply open up this page, <a class="reference external" href="https://repl.it/languages/python3">https://repl.it/languages/python3</a>, and you will be ready to get started right away!</p>
+</div>
+<div class="section" id="step-1-importing-modules">
+<h3>Step 1: Importing modules<a class="headerlink" href="#step-1-importing-modules" title="Permalink to this headline">¶</a></h3>
+<p>from random import randint</p>
+<p>The very first line of the code is: from random import randint.</p>
+<p>What does this line actually mean? Read it and you might get an idea. We are importing randint function from the random module using ‘from’ and ‘import’ keywords. The randint function has some special abilities that we are going to use in our program. We will discuss it later. Now that we have important this function we can use it in our code.</p>
+</div>
+<div class="section" id="step-2-creating-a-list-of-available-options">
+<h3>Step 2:  <strong>Creating a list of available options</strong><a class="headerlink" href="#step-2-creating-a-list-of-available-options" title="Permalink to this headline">¶</a></h3>
+<p>Earlier we discussed data structures. As I mentioned earlier, data structures in python are user-friendly and very easy to understand. Let’s look at our next line of code for our first data structure, a list.</p>
+<p>#List of options
+game  = [“Rock”, “Paper”, “Scissors”]</p>
+<p>Observe the above line of code. We created a  <strong>list</strong> data structure and named it, ‘game’. Then we initialized it with the three available choices we have, Rock, Paper, and Scissors.</p>
+<p>Remember, there are also few other data structures in python and each of them has different functionalities. A list is created by using  <strong>square brackets.</strong>  To retrieve its values, all we need to do is, write the name of the list, followed by two square brackets, and then enter the index of the value we wish to retrieve.</p>
+<p>If you want to learn more about lists, check out our  <a class="reference external" href="https://teachyourkidscode.com/learn-python-for-kids/">beginner python tutorial for kids</a>  where we review this topic in detail.</p>
+<p>Suppose we wish to print the second item on the list. How will we do this? Simple! we will use its index and remember, the index always starts from 0. This means the second item on the list has the first index. Observe the syntax below.</p>
+<p>game[1]</p>
+</div>
+<div class="section" id="step-3-getting-the-computer-to-choose-randomly">
+<h3>Step 3:  <strong>Getting the computer to choose randomly</strong><a class="headerlink" href="#step-3-getting-the-computer-to-choose-randomly" title="Permalink to this headline">¶</a></h3>
+<p>So we already imported the randint function and we also know how to retrieve values from a list. Now its time to combine both these concepts we learned to get the choice for the computer. Yes, you read it right. Observe the following code. This is how the computer is making its choices  <strong>randomly</strong> in this program.</p>
+<p>#Assigning a random option to computer
+computer = game[randint(0,2)]</p>
+<p>Pay attention now! We created a variable named computer and this variable will hold the computer’s choice. We already have the list of choices and we need to think of something so that the computer can choose one of it randomly. Randomly? Yes! this is where the randint function will come in play.</p>
+<p>The  <strong>randint function</strong>  is used to generate a random value. The lower and upper limits are passed to this function and the returned value is always between this range. Here, we will pass 0 and 2 because of our list, the game has three values. Don’t forget that 0 is considered the first value. Therefore 0, 1, and 2, make three options total!</p>
+<p>randint(0,2)</p>
+<p>This piece of code can return 0, 1 or 2. It can be unique or the same. It just depends upon the python’s mood! Joking 🙂 It is totally random! We are going to use the returned number as the index of the list.</p>
+<p>game[randint(0,2)]</p>
+<p>We write the whole randint function inside the square brackets, so the returned random number can work as the index. Now, the computer’s choice is made and the variable, the computer holds it. We will use this line of code again later, stay tuned!</p>
+</div>
+<div class="section" id="step-4-lets-define-a-few-more-variables-before-we-start-our-game">
+<h3>Step 4: Let’s define a few more variables before we start our game<a class="headerlink" href="#step-4-lets-define-a-few-more-variables-before-we-start-our-game" title="Permalink to this headline">¶</a></h3>
+<p>Variables are an important part of programming. We review the basics of variables and their importance of coding in part one our Python guide for kids. Check it out <a class="reference external" href="https://teachyourkidscode.com/learn-python-for-kids/">here!</a></p>
+<p>For our Rock, Paper, Scissors game, there are a few other variables to consider. Let’s discuss them</p>
+<p>playersPoint = 0</p>
+<p>computersPoint = 0</p>
+<p>These two variables will keep the count of points for the user and computer. This is why there are initialized to zero.</p>
+<p>goOn = True</p>
+<p>Remember, I mentioned that along with options, the user can also finish the game. The above variable will end the game when user types ‘Finish’. The goOn variable is set to True and it will be a condition of the  <strong>while loop</strong>. Don’t worry! we will discuss the while loop later.</p>
+<p>When the user enters ‘Finish’, the value of this variable will be changed to false and the game will end.</p>
+</div>
+<div class="section" id="step-5-creating-a-while-loop">
+<h3>Step 5: Creating a  <strong>While loop</strong><a class="headerlink" href="#step-5-creating-a-while-loop" title="Permalink to this headline">¶</a></h3>
+<p>Next let’s move on to the working area of our program. We used a while loop, but why? What is this while loop doing here? The  <strong>while loop</strong>  allows our game to run until the game is ended by the user. Observe the line that contains the while loop.</p>
+<p>#Loop goes on until goOn is false
+while(goOn):</p>
+<p>In the parenthesis, goOn variable is used. Remember, the goOn variable has True as its value. This means, the condition in while loop is true and it will run until the condition is false. And when will the condition  becomes  false? Exactly when the goOn variable’s value is changed to false. Later on, we will tell our program to change the goOn variable to false when the user types “Finish”</p>
+</div>
+<div class="section" id="step-6-allowing-user-input">
+<h3>Step 6: Allowing  <strong>User input</strong><a class="headerlink" href="#step-6-allowing-user-input" title="Permalink to this headline">¶</a></h3>
+<p>The first line of code within the while loop is:</p>
+<p>#Ask for user input<br>
+player = input(“Rock, Paper or Scissors? or enter Finish to end!\n”)</p>
+<p>This is where we are asking the user for their choice. The four options are Rock, Paper, Scissors, and Finish. The user has to enter one of these or the program will not go further. To get input from the user, the input function is used.</p>
+<p>The choice is stored in the player variable. The text written inside the function appears on the screen. Remember, we have to enter the values exactly as asked! This is uppercase and lowercase sensitive!</p>
+</div>
+<div class="section" id="step-7-define-the-scenarios">
+<h3>Step 7: Define the Scenarios<a class="headerlink" href="#step-7-define-the-scenarios" title="Permalink to this headline">¶</a></h3>
+<p>We have two variables: computer and player, holding choices of the computer and user respectively.</p>
+<p>Now it is time to decide the winner. We will do it by using if-elif-else ladder. Have a look at the ladder we used in the program and then we will discuss it.</p>
+<p>#Check for scenarios
+if(player == ‘Finish’):
+goOn = False
+elif(player == computer):
+print(“Tie!”)
+elif(player == “Rock”):
+if(computer == “Paper”):
+print(“You lose!”, computer, “covers”, player)
+computersPoint = computersPoint + 1
+else:
+print(“You win!”, player, “smashes”, computer)
+playersPoint = playersPoint + 1
+elif(player == “Paper”):
+if(computer == “Scissors”):
+print(“You lose!”, computer, “cut”, player)
+computersPoint = computersPoint + 1
+else:
+print(“You win!”, player, “covers”, computer)
+playersPoint = playersPoint + 1
+elif(player == “Scissors”):
+if(computer == “Rock”):
+print(“You lose…”, computer, “smashes”, player)
+computersPoint = computersPoint + 1
+else:
+print(“You win!”, player, “cut”, computer)
+playersPoint = playersPoint + 1
+else:
+print(“That’s not a valid play. Check your spelling!”)</p>
+<p>Let’s understand how the ‘if-elif-else ladder’ works. Each if and elif has a condition part in the parenthesis. The program will enter that block whose condition is true. Once the true condition is found, it will ignore all other conditions. But what happens when none of the conditions is true? The execution goes into the else block. Observe the above code once more, the else block has no condition.</p>
+<p>We will discuss all the conditions step by step.</p>
+<ol>
+<li><p>The first condition checks whether the user entered ‘Finish’ or not. If this condition is true, the value of the goOn variable will be changed to false and the program will end.</p>
+<p>if(player == ‘Finish’):
+goOn = False</p>
+</li>
+<li><p>The second condition checks where the choice of both the user and computer is the same. It this condition is true, no points are awarded to anyone.</p></li>
+</ol>
+<p>elif(player == computer):
+print(“Tie!”)</p>
+<ol class="simple">
+<li><p>The next three conditions work according to the basic concepts of the game. The winner is decided and points are awarded accordingly. Earlier, we initialized two variables with 0, computersPoint and playersPoint. If the computer wins, computersPoint variable is incremented by 1 and if the user wins, playersPoint variable is incremented by 1.</p></li>
+</ol>
+<p>elif(player == “Rock”):
+if(computer == “Paper”):
+print(“You lose!”, computer, “covers”, player)
+computersPoint = computersPoint + 1
+else:
+print(“You win!”, player, “smashes”, computer)
+playersPoint = playersPoint + 1
+elif(player == “Paper”):
+if(computer == “Scissors”):
+print(“You lose!”, computer, “cut”, player)
+computersPoint = computersPoint + 1
+else:
+print(“You win!”, player, “covers”, computer)
+playersPoint = playersPoint + 1
+elif(player == “Scissors”):
+if(computer == “Rock”):
+print(“You lose…”, computer, “smashes”, player)
+computersPoint = computersPoint + 1
+else:
+print(“You win!”, player, “cut”, computer)
+playersPoint = playersPoint + 1</p>
+<ol>
+<li><p>Last is the else block. There is no condition. It only displays a message when the user has entered an invalid choice.</p>
+<p>else:
+print(“That’s not a valid play. Check your spelling!”)</p>
+</li>
+</ol>
+</div>
+<div class="section" id="step-8-allowing-the-game-to-continue">
+<h3>Step 8: Allowing the Game to Continue<a class="headerlink" href="#step-8-allowing-the-game-to-continue" title="Permalink to this headline">¶</a></h3>
+<p>At the end of the while loop, we used the randint function once again to assign a choice for the computer.</p>
+<p>#Assigning a random option to computer
+computer = game[randint(0,2)]
+print(‘<strong><strong><strong><strong>Next Turn</strong></strong></strong></strong>’)</p>
+<p>We have to repeat this even though we had a similar line of code at the beginning of our game. Remember, in every turn, the computer has to make a choice. This is why we write this line of code again.</p>
+</div>
+<div class="section" id="step-9-displaying-the-final-score">
+<h3>Step 9: Displaying the final score<a class="headerlink" href="#step-9-displaying-the-final-score" title="Permalink to this headline">¶</a></h3>
+<p>When the user ends the game by typing ‘Finish’, the program will display the final score. The final score is stored in the two variables we used earlier, computersPoint and playersPoint.</p>
+<p>#Printing final points
+print(“<strong><strong><strong><strong>Final Points</strong></strong></strong></strong>”)
+print(“Player: “, playersPoint)
+print(“Computer: “, computersPoint)</p>
+</div>
+</div>
+<div class="section" id="rock-paper-scissors-full-code">
+<h2>Rock Paper Scissors – Full Code<a class="headerlink" href="#rock-paper-scissors-full-code" title="Permalink to this headline">¶</a></h2>
+<p>There is the full code you will need to run a Rock, Paper, Scissors game in Python. You can copy and paste this code into  <a class="reference external" href="https://repl.it/languages/python3">https://repl.it/languages/python3</a>  and play this game for yourself!</p>
+<p>from random import randint</p>
+<p>#List of options
+game  = [“Rock”, “Paper”, “Scissors”]</p>
+<p>#Assigning a random option to computer
+computer = game[randint(0,2)]</p>
+<p>#Keep count for points
+playersPoint = 0
+computersPoint = 0</p>
+<p>goOn = True</p>
+<p>#Loop goes on until goOn is false
+while(goOn):
+#Ask for user input
+player = input(“Rock, Paper or Scissors? or enter Finish to end!\n”)</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>#Check for scenarios
+if(player == &#39;Finish&#39;):
+    goOn = False
+elif(player == computer):
+    print(&quot;Tie!&quot;)
+elif(player == &quot;Rock&quot;):
+    if(computer == &quot;Paper&quot;):
+        print(&quot;You lose!&quot;, computer, &quot;covers&quot;, player)
+        computersPoint = computersPoint + 1 
+    else:
+        print(&quot;You win!&quot;, player, &quot;smashes&quot;, computer)
+        playersPoint = playersPoint + 1
+elif(player == &quot;Paper&quot;):
+    if(computer == &quot;Scissors&quot;):
+        print(&quot;You lose!&quot;, computer, &quot;cut&quot;, player)
+        computersPoint = computersPoint + 1
+    else:
+        print(&quot;You win!&quot;, player, &quot;covers&quot;, computer)
+        playersPoint = playersPoint + 1
+elif(player == &quot;Scissors&quot;):
+    if(computer == &quot;Rock&quot;):
+        print(&quot;You lose...&quot;, computer, &quot;smashes&quot;, player)
+        computersPoint = computersPoint + 1
+    else:
+        print(&quot;You win!&quot;, player, &quot;cut&quot;, computer)
+        playersPoint = playersPoint + 1
+else:
+    print(&quot;That&#39;s not a valid play. Check your spelling!&quot;)
+#Assigning a random option to computer
+computer = game[randint(0,2)]
+print(&#39;********Next Turn********&#39;)
+</pre></div>
+</div>
+<p>#Printing final points
+print(“<strong><strong><strong><strong>Final Points</strong></strong></strong></strong>”)
+print(“Player: “, playersPoint)
+print(“Computer: “, computersPoint)</p>
+<div class="section" id="lets-look-at-the-final-code-in-action">
+<h3>Let’s look at the final code in action!<a class="headerlink" href="#lets-look-at-the-final-code-in-action" title="Permalink to this headline">¶</a></h3>
+<p>Python Tutorial for Kids: Rock Paper Scissors Demo</p>
+<p>Play Video</p>
+<p>A user can enter ‘Rock’,’Paper’, or ‘Scissors’ to play, or ‘finish’ to end the game. Then the value is matched with the computer’s choice and the points are distributed accordingly. When the game is ended, final points are displayed on the screen.</p>
+<p>So this is how we can create a simple Rock, Paper and Scissors game in python.</p>
+</div>
+</div>
+<div class="section" id="python-coding-game-2-create-a-magic-8-ball-fortune-teller">
+<h2>Python Coding Game #2: Create a Magic 8 Ball Fortune Teller<a class="headerlink" href="#python-coding-game-2-create-a-magic-8-ball-fortune-teller" title="Permalink to this headline">¶</a></h2>
+<p><img alt="" src="https://teachyourkidscode.com/wp-content/uploads/2019/09/Magic-8-Ball-Learn-Python-for-Kids-1024x949.jpg" /></p>
+<p>Last time, we built a simple Rock, Paper and Scissors game in python. The game was simply created using  <strong>variables</strong>,  <strong>list</strong>,  <strong>while loop</strong>,  <strong>if-elif-else ladder</strong>  and a special <strong>randint  method</strong>  that we imported from  <strong>random module</strong>. In this tutorial, we are going to create another game that mimics a class toy from my childhood: The Magic 8 ball – fortune teller. This will be fun!</p>
+<p>We will use the basic concepts we learned last time and combine them with another new concept of programming language that is known as <strong>functions</strong>.</p>
+<div class="section" id="all-about-functions">
+<h3>All About Functions<a class="headerlink" href="#all-about-functions" title="Permalink to this headline">¶</a></h3>
+<p><strong>Functions</strong>  are an integral part of almost every programming language. Functions exist in python too. What are  functions  and why we need them? A function is an organized block of code that is defined for some specific task.</p>
+<p>Functions are used for code reusability. When we need a single block of code multiple times in a program, should we write it every time again? Absolutely not! This is where functions come in play. Functions can be called from anywhere in python. Values can be passed as parameters to a function and values can be returned from a function as well.</p>
+<p>Functions are very helpful in programming. We will focus on functions in the magic 8 ball game. But first, let’s discuss a few advantages of using functions.</p>
+</div>
+<div class="section" id="advantages-of-functions-in-coding">
+<h3>Advantages of functions in coding<a class="headerlink" href="#advantages-of-functions-in-coding" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Ease in program development.</p></li>
+<li><p>Testing becomes easy.</p></li>
+<li><p>Code reusability.</p></li>
+<li><p>Better program readability.</p></li>
+<li><p>Sharing of code becomes possible.</p></li>
+</ol>
+</div>
+<div class="section" id="what-is-the-magic-8-ball">
+<h3><strong>What is the Magic 8 Ball?</strong><a class="headerlink" href="#what-is-the-magic-8-ball" title="Permalink to this headline">¶</a></h3>
+<p><img alt="" src="https://teachyourkidscode.com/wp-content/uploads/2019/09/Magic-8-Ball-Python-Coding-for-Kids-1024x959.jpg" /></p>
+<p>What is magic 8 ball? It is basically a toy that was developed in the 1950s. The user asks a question and a reply appears on the surface of the ball. If a user asks, “Am I going to die today?”, the reply could be, “Certainly yes!”. Don’t worry! You can play this game because there is no truth in its replies. It just randomly picks an answer from a set of answers and displays it on the screen whenever input is received.</p>
+<p>So it is basic programming. What comes in your mind when I say “It just randomly picks an answer from a set of answers”? Yes! you guessed it right, the  <strong>randint  method</strong>. Last time we similarly used the  randint  method to pick a choice for computer from the array containing three values – Rock, Paper and Scissors. This time will do something similar to this. Let’s see what we are going to do in this game.</p>
+</div>
+<div class="section" id="lets-decompose-the-magic-8-ball-game">
+<h3>Let’s Decompose the Magic 8 Ball Game!<a class="headerlink" href="#lets-decompose-the-magic-8-ball-game" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Again, there are two parties involved. One is the user and second is the magic 8 ball.</p></li>
+<li><p>The user will type a question and magic 8 ball will give a reply.</p></li>
+<li><p>There will be a set of answers and one answer per question will be picked from this set.</p></li>
+<li><p>There will always be an option to finish the game.</p></li>
+</ol>
+</div>
+<div class="section" id="magic-8-ball-full-working-code">
+<h3>Magic 8 Ball – Full Working Code<a class="headerlink" href="#magic-8-ball-full-working-code" title="Permalink to this headline">¶</a></h3>
+<p>So here is the full working code of Magic 8 ball – fortune teller game in python. We will discuss this code step by step but first, make sure, you go through it properly.</p>
+<p>#importing randint method
+from random import randint</p>
+<p>#List of answers
+answers = [‘Outlook good’, ‘Yes Signs point to yes’, ‘Reply hazy’, ‘try again’, ‘Ask again later’, ‘Better not tell you now’,’It is certain’, ‘It is decidedly so’, ‘Without a doubt’, ‘Yes – definitely’, ‘You may rely on it’, ‘As I see it, yes’, ‘Most likely’, ‘Cannot predict now’, ‘Concentrate and ask again’, ‘Dont count on it’, ‘My reply is no’, ‘My sources say no’, ‘Outlook not so good’, ‘Very doubtful’]</p>
+<p>print(‘Hello stranger!, I am the Magic 8 Ball’)
+print(‘**********’)</p>
+<p>#The magic 8 ball function
+def Magic8Ball():
+print(‘Ask me a question.’)
+input()</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>#using randint method
+print (answers[randint(0, len(answers)-1)] )
+print(&#39;I hope that helped!&#39;)
+
+#calling Replay function
+choice = Replay()
+
+if(choice == &#39;Y&#39;):
+    #Calling Magic8ball function 
+    Magic8Ball()
+elif(choice == &#39;N&#39;):
+    return
+else:
+    print(&#39;I did not understand! Please repeat.&#39;)
+    #Calling Replay function
+    Replay()
+</pre></div>
+</div>
+<p>#Function for user’s decision
+def Replay():
+print (‘Do you have another question? Enter Y if yes or N if no.’)
+choice = input()</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>#Returning user input
+return choice
+</pre></div>
+</div>
+<p>#Calling Magic8ball function
+Magic8Ball()
+print(‘<em><strong><strong>I hope you got your answers</strong></strong></em>’)</p>
+</div>
+<div class="section" id="importing-the-randint-method">
+<h3><strong>Importing the randint method</strong><a class="headerlink" href="#importing-the-randint-method" title="Permalink to this headline">¶</a></h3>
+<p>#importing randint method
+from random import randint</p>
+<p>Here we imported the randint method from random module. We will use this method for choosing answers later.</p>
+</div>
+<div class="section" id="list-of-answers">
+<h3><strong>List of answers</strong><a class="headerlink" href="#list-of-answers" title="Permalink to this headline">¶</a></h3>
+<p>#List of answers
+answers = [‘Outlook good’, ‘Yes Signs point to yes’, ‘Reply hazy’, ‘try again’, ‘Ask again later’, ‘Better not tell you now’,’It is certain’, ‘It is decidedly so’, ‘Without a doubt’, ‘Yes – definitely’, ‘You may rely on it’, ‘As I see it, yes’, ‘Most likely’, ‘Cannot predict now’, ‘Concentrate and ask again’, ‘Dont count on it’, ‘My reply is no’, ‘My sources say no’, ‘Outlook not so good’, ‘Very doubtful’]</p>
+<p>This is quite a big list! There are 20 answers on this list. Magic 8 ball can choose any answer from this list. You can also personalize this to your own set of answers! Get creative!</p>
+</div>
+<div class="section" id="calling-the-magic8ball-function">
+<h3><strong>Calling the Magic8Ball function</strong><a class="headerlink" href="#calling-the-magic8ball-function" title="Permalink to this headline">¶</a></h3>
+<p>Further, there is a simple printing part and two functions. These two functions won’t do anything until they are called. So let’s skip this part for the time being and jump directly to the ending part of the code.</p>
+<p>Magic8Ball()</p>
+<p>This is where everything begins. One of the two functions is named Magic8Ball and here we are calling it. The program execution will skip the two function and when this line get’s executed, the magic8ball function will get invoked. There are no parameters for the magic8ball function. So there is nothing passed in the parenthesis.</p>
+</div>
+<div class="section" id="working-of-magic8ball-function">
+<h3><strong>Working of Magic8Ball function</strong><a class="headerlink" href="#working-of-magic8ball-function" title="Permalink to this headline">¶</a></h3>
+<p>Now let’s understand the working of the Magic8Ball function.</p>
+<p>def Magic8Ball():
+print(‘Ask me a question.’)
+input()</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>#using randint method
+print (answers[randint(0, len(answers)-1)] )
+print(&#39;I hope that helped!&#39;)
+
+#calling Replay function
+choice = Replay()
+
+if(choice == &#39;Y&#39;):
+    #Calling Magic8ball function 
+    Magic8Ball()
+elif(choice == &#39;N&#39;):
+    return
+else:
+    print(&#39;I did not understand! Please repeat.&#39;)
+    #Calling Replay function
+    Replay()
+</pre></div>
+</div>
+<p>Pay attention to the very first line of the above code – def Magic8Ball(). This is how functions are defined in python using the def keyword. First, we ask for the user’s questions. Here, we are not storing the user’s question anywhere because it does not matter what the user asks. This is the concept of the game.</p>
+<p>Pay attention to the next line.</p>
+<p>print(answers[randint(0, len(answers)-1)] )</p>
+<p>This is the most important part of the game – Answer from Magic8Ball. So what is happening here? The randint method is used to get a random number.</p>
+<p>randint(0, len(answers)-1)</p>
+<p>Last time in the Rock, Paper, and Scissors game, we did something similar to this. There we passed 0 and 2 in the randint method because there were only 3 values to choose from. But in this program, we have 20 or we can have 30 or as much as answers we want. So instead of using a static value, we used a method that counts the length of the list.</p>
+<p>len(answers)</p>
+<p>This will return 20 because there are 20 values in the answers list. But remember the index of a list always starts from 0, which means, the last element is on the 19th index. You can learn more about this method of counting in our  <a class="reference external" href="https://teachyourkidscode.com/learn-python-for-kids/">basic Python Tutorial.</a>  That is why we subtracted 1 from the returned value. Now the  randint  method will return a random number from 0 to 19.</p>
+<p>answers[randint(0, len(answers)-1)]</p>
+<p>The randint method is used in the square brackets. This is how a random answer will appear.</p>
+</div>
+<div class="section" id="the-replay-function">
+<h3><strong>The Replay() function</strong><a class="headerlink" href="#the-replay-function" title="Permalink to this headline">¶</a></h3>
+<p>This is the part where the user decides, should the game continue or not. We have a separate function for this input – Replay().</p>
+<p>def Replay():
+print (‘Do you have another question? Enter Y if yes or N if no.’)
+choice = input()</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>#Returning user input
+return choice
+</pre></div>
+</div>
+<p>As mentioned earlier, each function has a specific task. The magic8ball function asks the question and gives an answer. The replay function asks what does the user want to do next – play or quit. The user has to enter ‘Y’ for yes and ‘N’ for no.</p>
+<p>The return keyword is used to return a value from a function. But we need to store this returned value. But wait a minute! where did we call this replay function? In the magic8ball function. Let’s go back there.</p>
+</div>
+<div class="section" id="calling-the-replay-function-in-magic8ball-function">
+<h3><strong>Calling the replay function in magic8ball function</strong><a class="headerlink" href="#calling-the-replay-function-in-magic8ball-function" title="Permalink to this headline">¶</a></h3>
+<p>In the magic8ball function, we call the Replay function and store the returned value in the choice variable.</p>
+<p>choice = Replay()</p>
+<p>The choice variable will be used next in the if-elif-else ladder.</p>
+</div>
+<div class="section" id="the-if-elif-else-ladder">
+<h3>The if-elif-else Ladder<a class="headerlink" href="#the-if-elif-else-ladder" title="Permalink to this headline">¶</a></h3>
+<p>if(choice == ‘Y’):
+#Calling Magic8ball function
+Magic8Ball()
+elif(choice == ‘N’):
+return
+else:
+print(‘I did not understand! Please repeat.’)
+#Calling Replay function
+Replay()</p>
+<p>Let’s understand the if-elif-else ladder step by step.</p>
+<ol class="simple">
+<li><p>If the value of the choice variable is ‘Y’, the magic8ball function will be called again.</p></li>
+<li><p>If the value of the choice variable is ‘N’, the program will exit the magic8ball function. Now pay attention here.</p></li>
+</ol>
+<p>elif(choice == ‘N’):
+return</p>
+<p>We only used the return keyword but no value is returned with it. This is a way of exiting from a function.</p>
+<ol class="simple">
+<li><p>If the value of the choice variable is anything else except ‘Y’ and ‘N’, The reply function will be called again for appropriate user input.</p></li>
+</ol>
+<p>This is how we can build a simple Magic 8 ball – fortune teller game in python.</p>
+</div>
+<div class="section" id="id3">
+<h3>Let’s look at the final code in action!<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Python for Kids: Magic 8 Ball Tutorial Demo</p>
+<p>Play Video</p>
+<p>When the code is run the computer will start by asking the use a question. The user enters a question and the computer will randomly generate an answer, just like the toy magic 8 ball!</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./ninja"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Mark Russel Miranda<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+  </body>
+</html>
